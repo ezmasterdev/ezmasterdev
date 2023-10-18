@@ -490,6 +490,18 @@ function w3_close() {
     }
     x[slideIndex-1].style.display = "block";  
   }
+
+  // Check if the 'screen.orientation' property is available
+  if (typeof screen.orientation !== 'undefined') {
+  // Lock the screen orientation to 'portrait-primary' (upright portrait)
+    screen.orientation.lock('portrait-primary')
+      .then(function() {
+        console.log('Screen orientation locked successfully.');
+      })
+      .catch(function(error) {
+        console.error('Failed to lock screen orientation:', error);
+      });
+  }
   </script>
 
 </body>
