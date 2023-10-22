@@ -66,3 +66,41 @@ cursor {
     position: relative;
     top: -800px;
 }
+
+/* Define the animation keyframes */
+@keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.container {
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+    will-change: transform, opacity; /* Improve performance by hinting at what will change */
+  }
+
+.animate-on-scroll2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s, transform 2s;
+    will-change: transform, opacity; /* Improve performance by hinting at what will change */
+  }
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  
