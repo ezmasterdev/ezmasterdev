@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>EZMASTERDEV</title>
+<title>Ezmasterdev</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/path/to/favicon.ico">
@@ -13,80 +13,48 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family:"Railway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("images/header-pic.png");
-  min-height: 100%;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
-</style>
 </head>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-    <div class="w3-bar w3-light-grey w3-card" id="myNavbar">
+    <div class="w3-bar w3-card ez-glass" id="myNavbar">
       <a href="#home" class="w3-bar-item w3-wide" style="text-decoration: none;">
         <img class="w3-circle" src="images/EZ-logo.png" style="height: 40px; width: 40px; padding: 0%;">
-        EZMASTERDEV
+        <span class="w3-text-white">EZMASTERDEV</span>
       </a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
-        <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-button">Dropdown <i class="fa fa-caret-down"></i></button>     
-          <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-            <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#educ" class="w3-bar-item w3-button"><i class="fa fa-book"></i> EDUCATIONAL</a>
-            <a href="#faq" class="w3-bar-item w3-button"><i class="fa fa-question-circle"></i> FAQs</a>
-          </div>
-        </div>
-        <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PROJECTS</a>
-        <a href="#model" class="w3-bar-item w3-button"><i class="fa fa-map"></i> ROADMAP</a>
-        <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-archive"></i> PACKAGES</a>
+        <a href="#about" class="w3-bar-item w3-button w3-text-white ez-trans ez-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#features" class="w3-bar-item w3-button w3-text-white ez-trans ez-hide-small"><i class="fa fa-desktop"></i> FEATURES</a>
+        <a href="#work" class="w3-bar-item w3-button w3-text-white ez-trans ez-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
+        <a href="#pricing" class="w3-bar-item w3-button w3-text-white ez-trans ez-hide-small"><i class="fa fa-archive"></i> PACKAGES</a>
+        <a href="https://www.facebook.com/messages/t/107574925646569" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-text-white ez-trans ez-hide-small"><i class="fa fa-cog"></i> SUPPORT</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
   
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-large ez-trans ez-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars w3-text-white"></i>
       </a>
     </div>
   </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
-  <a href="#educ" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-book"></i> EDUCATIONAL</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PROJECTS</a>
-  <a href="#model" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-map"></i> ROADMAP</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-archive"></i> PACKAGES</a>
-  <a href="#faq" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-question-circle"></i> FAQs</a>
+<nav class="w3-sidebar w3-bar-block ez-glass w3-text-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display: none;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 ez-trans">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button ez-trans"><i class="fa fa-user"></i> ABOUT</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button ez-trans"><i class="fa fa-th"></i> PROJECTS</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button ez-trans"><i class="fa fa-archive"></i> PACKAGES</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button ez-trans"><i class="fa fa-cog"></i> SUPPORT</a>
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-grayscale-min" id="home" style="background: url(images/top-pic.png);">
-    <div class="w3-display-left w3-text-white" style="padding:48px;">
-      <span class="w3-jumbo w3-hide-small content1  "><b>Boost your online presence</b></span><br>
-      <span class="w3-xxlarge w3-hide-large w3-hide-medium content1  "><b>Boost your online presence</b></span><br>
-      <span class="w3-large  "><b>Take up space and compete in the digital market with your very own website.</b></span>
-      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
-    </div> 
-    <div class="w3-display-bottomleft w3-text-light-grey w3-xxlarge" style="margin:24px 48px; cursor: pointer;">
-      <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity" style="text-decoration: none;"></i></a>
-        <span style="text-decoration: none; font-size: 15px;">Facebook Page</span>
+<header class="bgimg-1 w3-grayscale-min" id="home" style="background: url(images/top-image.png);">
+    <div class="w3-display-left w3-text-white" style="padding:48px; z-index: 5;">
+      <span class="w3-jumbo w3-hide-small content1"><b>Boost your online presence</b></span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium content1"><b>Boost your online presence</b></span><br>
+      <span class="w3-large"><b>Take up space and compete in the digital market with your very own website.</b></span>
+      <p><a href="#about" class="w3-button ez-hollow w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off ez-trans">Learn more and start today</a></p>
     </div>
 </header>
 
@@ -96,376 +64,717 @@ body, html {
 <section id="top"></section>
 
 <!-- About Section -->
-<div class="w3-container w3-white" style="padding:75px 20px" id="about">
-  <h3 class="w3-center"><i class="fa fa-user w3-jumbo "></i></h3>
-  <h3 class="w3-center ">ABOUT EZMASTERDEV</h3>
-  <p class="w3-center w3-medium " style="padding-bottom: 30px;">
-    Ezmasterdev is a front-end web developer that offers to create your very own static business website for a cheap price. Take your presence to a whole new level and compete in the digital market with Ezmasterdev. Gain a huge advantage over your business competitors by becoming accessible to your customers on the internet. Choose a plan in the packages section that best suits your business needs and Ezmasterdev will take care of the rest. Below are some of the primary features that best defines what Ezmasterdev is all about:
-  </p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter  ">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Responsive</p>
-      <p>Ezmasterdev offers a website structure that is compatible with any type of device. In the rapid growth of technology, a responsive website is definitely a must.</p>
-    </div>
-    <div class="w3-quarter ">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Ezmasterdev creates not with haste but with passion. It is a top priority to ensure that your website meets a certain level of quality for a great user experience.</p>
-    </div>
-    <div class="w3-quarter ">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Design</p>
-      <p>Ezmasterdev will definitely design your website that best aligns with the overall aesthetics of your business and keep its unique atmosphere intact. </p>
-    </div>
-    <div class="w3-quarter ">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Ezmasterdev understands that website processes can be difficult to understand. You can ask for support via media platforms through this <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank"><span style="color: blue;"><i><u>link</u></i></span></a></p>
-    </div>
-  </div>
-</div>
-
-<!-- Educational -->
-<div class="w3-container w3-light-grey " style="padding:128px 16px" id="educ">
-  <div class="w3-row-padding">
-    <div class="w3-col m6 ">
-      <h2 class="">Understanding Website Development</h2>
-      <h4 class="">with EZMASTERDEV</h4>
-      <p class="">Understanding the fundamentals of website development is pivotal not just for the developer but for the client as well. It makes the communication between the developer and client much more easier and productive. It also boosts efficiency as both parties are knowledgeable in the fundamentals. If you want to know the basics of website development, click the button below:</p>
-      <br>
-      <button class="w3-button w3-black " onclick="alert('This feature is currently under maintenance. Thank you!')"><i class="fa fa-book"></i> Learn More
-      </button><p id="js-maintenance"></p>
-      <br>
-      <br>
-    </div>
-    <div class="w3-col m6 ">
-      <img class="w3-image w3-round-large" src="images/curious.png">
-    </div>
-  </div>
-</div>
-
-<!-- Projects Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center  ">COMPLETED PROJECTS</h3>
-  <p class="w3-center w3-large  ">Below are some examples of Ezmasterdev's work</p>
+<br>
+<br>
+<br>
+<div class="w3-row" id="about">
+  <div class="w3-col w3-left w3-container" style="width:10%"><p></p></div>
+  <div class="w3-col w3-right w3-container" style="width:10%"><p></p></div>
+  <div class="w3-rest w3-container w3-black">
     <div class="w3-center">
-      <div class="w3-row-padding" style="margin-top:64px">
-        <div class="w3-col l3 m6 w3-margin-bottom ">
-          <div class="w3-card">
-            <img src="images/ezm-sample.png" alt="" style="width:100%; height: 100%;">
-            <div class="w3-container">
-              <p class="w3-center">Ezmasterdev</p>
-            </div>
-          </div>
-        </div>
-      <a href="https://ezmasterdev.github.io/MSM-home/" target="_blank">
-        <div class="w3-col l3 m6 w3-margin-bottom  w3-hover-opacity cursor" style="cursor: pointer;">
-          <div class="w3-card">
-            <img src="images/MSM-sample.png" alt="" style="width:100%; height: 100%;">
-            <div class="w3-container">
-              <p class="w3-center">MSM Milktea Enterprise</p>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="https://ezmasterdev.github.io/Pampiri/" target="_blank">
-        <div class="w3-col l3 m6 w3-margin-bottom  w3-hover-opacity cursor" style="cursor: pointer;">
-          <div class="w3-card">
-            <img src="images/Pampiri-sample.png" alt="" style="width:100%; height: 100%;">
-            <div class="w3-container">
-              <p class="w3-center">Pampiri Office Supplies</p>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="https://ezmasterdev.github.io/G.A.W-home/" target="_blank">
-        <div class="w3-col l3 m6 w3-margin-bottom  w3-hover-opacity cursor" style="cursor: pointer;">
-          <div class="w3-card">
-            <img src="images/GAW-sample.png" alt="" style="width:100%; height: 100%;">
-            <div class="w3-container">
-              <p class="w3-center">Grab a Wing</p>
-            </div>
-          </div>
-        </div>
-      </a>
+      <img src="images/about.png" style="height: 250px; width: 250px;">
+    </div>
+    <h3 class="w3-center ">ABOUT EZMASTERDEV</h3>
+    <p class="w3-center w3-medium " style="padding-bottom: 30px; padding-top: 15px;">
+      Ezmasterdev is a front-end web developer that offers to create your very own static business website for a cheap price. Take your presence to a whole new level and compete in the digital market with Ezmasterdev. Gain a huge advantage over your business competitors by becoming accessible to your customers on the internet. Choose a plan in the packages section that best suits your business needs and Ezmasterdev will take care of the rest. Below are the primary features that best defines what Ezmasterdev can offer:
+    </p>
+  </div>
+</div>
+<br>
+
+<!-- Responsive -->
+<div class="w3-container w3-black" style="padding: 0px 16px; background: url(images/BG-RHS.png);" id="responsive">
+  <div class="w3-row-padding ez-hide-small">
+    <div class="w3-col m6" style="Margin-top: 130px;">
+      <h2 class="w3-center">Responsive</h2>
+      <br>
+      <p class="w3-center"><b>We build and design websites to be mobile responive so that it is compatible with all types of devices. We make sure that the websites we create are accessible across different forms of technology.</b></p>
+      <br>
+      <div class="w3-center">
+        <a href="#work" class="w3-button ez-hollow ez-trans"><i class="fa fa-th"></i> Browse works</a>
+        <p id="js-maintenance"></p>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="w3-col m6 ez-hide-padding" style="padding-top: 245px; padding-bottom: 115px;">
+      <div class="w3-center">
+        <img style="width: 100%;" src="images/responsive.png">
+      </div>
     </div>
   </div>
 </div>
 
-<header class="w3-display-container w3-center w3-card">
-  <div class="mySlides w3-animate-opacity ">
-    <img class="w3-image" src="images/MSM-sample.png" alt="Image 1" style= "object-fit: contain;">
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge">MSM Milktea Enterprise</h1>
-        <hr class="w3-opacity">
-        <p>The MSM Milktea Enterprise is an innovative enterprise in the tea industry. They serve classic milktea flavors with a twist. They incorporate pop pearls that reveals a series of flavors.</p>
-        <p><a href="https://ezmasterdev.github.io/MSM-home/" target="_blank" class="w3-button w3-block w3-brown  w3-round">Visit Site <i class="fa fa-globe"></i></a></p>
+<!-- Responsive Mobile View -->
+<div class="w3-container w3-black w3-padding-24" style="padding: 0px 16px;" id="responsive">
+  <div class="w3-row-padding ez-hide-medium">
+    <div class="w3-col m6">
+      <br>
+      <h2 class="w3-center">Responsive</h2>
+      <p class="w3-center"><b>We build and design websites to be mobile responive so that it is compatible with all types of devices. We make sure that the websites we create are accessible across different forms of technology.</b></p>
+      <br>
+      <div class="w3-center">
+        <a href="#work" class="w3-button ez-hollow ez-trans"><i class="fa fa-th"></i> Browse works</a>
+        <p id="js-maintenance"></p>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="w3-col m6 ez-hide-padding">
+      <div class="w3-center">
+        <img style="width: 100%;" src="images/responsive.png">
       </div>
     </div>
   </div>
-  <div class="mySlides w3-animate-opacity ">
-    <img class="w3-image" src="images/Pampiri-sample.png" alt="Image 3" style= "object-fit: contain;">
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge">Pampiri Office Supplies Trading</h1>
-        <hr class="w3-opacity">
-        <p>Pampiri offers to supply your office necessities at your convenience. They are strict in prioritizing customer convenience because they adhere to their business motto "With Pampiri, you have no worries" </p>
-        <p><a href="https://ezmasterdev.github.io/Pampiri/" target="_blank" class="w3-button w3-block w3-light-blue  w3-round">Visit Site <i class="fa fa-globe"></i></a></p>
-      </div>
-    </div>
-  </div>
-  <div class="mySlides w3-animate-opacity ">
-    <img class="w3-image" src="images/GAW-sample.png" alt="Image 2" style= "object-fit: contain;">
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge">Grab a Wing!</h1>
-        <hr class="w3-opacity">
-        <p>Grab a Wing seeks to satisfy your chicken wing cravings at your convenience. Come and try their specialties by visiting their website and start browsing the different services that they offer.</p>
-        <p></p><a href="https://ezmasterdev.github.io/G.A.W-home/" target="_blank" class="w3-button w3-block w3-red  w3-round">Visit Site <i class="fa fa-globe"></i></a></p>
-      </div>
-    </div>
-  </div>
-  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey " onclick="plusDivs(1)">browse works <i class="fa fa-angle-right"></i></a>
-  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium " onclick="plusDivs(1)">browse works <i class="fa fa-angle-right"></i></a>
-</header>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<!-- Model Section -->
-<div class="w3-container w3-light-grey" style="padding:75px 20px" id="model">
-  <h3 class="w3-center "><b>EZMASTERDEV's</b></h3>
-  <h4 class="w3-center ">10-STEP BUSINESS MODEL</h4>
-
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter" style="border-color: black;">
-      <h3><span class="w3-padding w3-black w3-circle"><b>1</b></span></h3>
-      <p>Choose a plan in the<br>
-        packages section that best<br>
-        suits your business needs.</p>
-    </div>
-    <div class="w3-quarter" style="border-color: black;">
-      <h3><span class="w3-padding w3-black w3-circle"><b>2</b></span></h3>
-      <p>Fill out the forms that<br>
-        Ezmasterdev will send you<br>
-        and proceed to the next step.
-       </p>
-    </div>
-    <div class="w3-quarter" style="border-color: black;">
-      <h3><span class="w3-padding w3-black w3-circle"><b>3</b></span></h3>
-      <p>Let Ezmasterdev set a zoom<br>
-        meeting to discuss all about<br> 
-        the details of your chosen plan.</p>
-    </div>
-    <div class="w3-quarter" style="border-color: black;">
-      <h3><span class="w3-padding w3-black w3-circle"><b>4</b></span></h3>
-      <p>Pay for the computed down payment<br>
-        via the GCash application and<br>
-        proceed to the next step.</p>
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center">
-    <div class="w3-quarter" style="border-color: black;">
-      <h3><span class="w3-padding w3-black w3-circle"><b>5</b></span></h3>
-      <p>Continuously cooperate with<br>
-        the necessary inputs and<br> 
-        revisions for your website.</p>
-    </div>
-    <div class="w3-quarter" style="border-color: black;">
-      <h3><span class="w3-padding w3-black w3-circle"><b>6</b></span></h3>
-      <p>Let Ezmasterdev set a zoom<br>
-        meeting to present the output<br>
-        and brief you on the next steps.</p>
-    </div>
-    <div class="w3-quarter">
-      <h3><span class="w3-padding w3-black w3-circle"><b>7</b></span></h3>
-      <p>Let EZmasterdev assist you in<br>
-        choosing a domain name for your<br>
-        website's domain registration.</p>
-    </div>
-    <div class="w3-quarter">
-      <h3><span class="w3-padding w3-black w3-circle"><b>8</b></span></h3>
-      <p>Let EZmasterdev assist you for<br>
-        the <b>FREE</b> web hosting deal and<br>
-        have your website be SSL certified. 
-      </p>
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center">
-    <div class="w3-quarter">
-      <h3><span class="w3-padding w3-black w3-circle"><b>9</b></span></h3>
-      <p>Let EZmasterdev assist you in<br>
-        making your website more accessible<br>
-        via search engine optimization.
-      </p>
-    </div>
-    <div class="w3-quarter">
-      <h3><span class="w3-padding w3-black w3-circle"><b>10</b></span></h3>
-      <p>Pay for the remaining balance<br>
-        and voila, you now have your<br>
-        very own business website.</p>
-    </div>
-  </div>
-
 </div>
 
+
+<!-- SEO -->
+<div class="w3-container w3-black" style="padding: 0px 16px;; background: url(images/BG-LHS.png);" id="seo">
+  <div class="w3-row-padding ez-hide-small">
+    <div class="w3-col m6" style="padding-top: 245px; padding-bottom: 115px;">
+      <div class="w3-center">
+        <img style="width: 100%;" src="images/SEO.png">
+      </div>
+    </div>
+    <div class="w3-col m6" style="Margin-top: 130px;">
+      <h2 class="w3-center">S.E.O</h2>
+      <br>
+      <p class="w3-center"><b>Search Engine Optimization allows websites to become Searchable on the internet. Ezmasterdev can optimize your website's accessibility through Google's search console Indexing.</b></p>
+      <br>
+      <div class="w3-center">
+        <a href="#services" class="w3-button ez-hollow ez-trans"><i class="fa fa-map"></i> See price</a>
+        <p id="js-maintenance"></p>
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+
+<!-- SEO Mobile View -->
+<div class="w3-container w3-black" style="padding: 0px 16px;" id="seo">
+  <div class="w3-row-padding ez-hide-medium">
+    <div class="w3-col m6">
+      <div class="w3-center">
+        <img style="width: 100%;" src="images/SEO.png">
+      </div>
+    </div>
+    <div class="w3-col m6">
+      <h2 class="w3-center">S.E.O</h2>
+      <p class="w3-center"><b>Search Engine Optimization allows websites to become Searchable on the internet. Ezmasterdev can optimize your website's accessibility through Google's search console Indexing.</b></p>
+      <br>
+      <div class="w3-center">
+        <a href="#services" class="w3-button ez-hollow ez-trans"><i class="fa fa-map"></i> See price</a>
+        <p id="js-maintenance"></p>
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+
+<!-- SSL -->
+<div class="w3-container w3-black" style="padding: 0px 16px;; background: url(images/BG-RHS2.png);" id="ssl">
+  <div class="w3-row-padding ez-hide-small">
+    <div class="w3-col m6" style="Margin-top: 130px;">
+      <h2 class="w3-center">S.S.L</h2>
+      <br>
+      <p class="w3-center"><b>An SSL or Secure Sockets Layer is a digital certificate that verifies a website's identity and enables an encrypted connection. Ezmasterdev can help you issue an SSL certificate for your website.</b></p>
+      <br>
+      <div class="w3-center">
+        <a href="#services" class="w3-button ez-hollow ez-trans"><i class="fa fa-map"></i> See price</a>
+        <p id="js-maintenance"></p>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="w3-col m6" style="padding-top: 85px; padding-bottom: 115px;">
+      <div class="w3-center">
+        <img style="width: 90%;" src="images/SSL.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SSL Mobile View -->
+<div class="w3-container w3-black" style="padding: 0px 16px;" id="ssl">
+  <div class="w3-row-padding ez-hide-medium">
+    <div class="w3-col m6">
+      <h2 class="w3-center">S.S.L</h2>
+      <p class="w3-center"><b>An SSL or Secure Sockets Layer is a digital certificate that verifies a website's identity and enables an encrypted connection. Ezmasterdev can help you issue an SSL certificate for your website.</b></p>
+      <br>
+      <div class="w3-center">
+        <a href="#services" class="w3-button ez-hollow ez-trans"><i class="fa fa-map"></i> See price</a>
+        <p id="js-maintenance"></p>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="w3-col m6">
+      <div class="w3-center">
+        <img style="width: 90%;" src="images/SSL.png">
+      </div>
+    </div>
+  </div>
+</div>
 <br>
 <br>
 <br>
-<br>
-<br>
+
+<!-- Domain -->
+<div class="w3-container w3-black" style="padding: 0px 16px;; background: url(images/BG-LHS2.png);" id="domain">
+  <div class="w3-row-padding ez-hide-small">
+    <div class="w3-col m6" style="padding-top: 285px; padding-bottom: 115px;">
+      <div class="w3-center">
+        <img style="width: 100%;" src="images/domain.png">
+      </div>
+    </div>
+    <div class="w3-col m6" style="Margin-top: 130px;">
+      <h2 class="w3-center">Domain</h2>
+      <br>
+      <p class="w3-center"><b>A domain name is a special, distinctive address that is used to visit websites, such "facebook.com" and "google.com". Ezmasterdev can help in registering your very own domain name.</b></p>
+      <br>
+      <div class="w3-center">
+        <a href="#services" class="w3-button ez-hollow ez-trans"><i class="fa fa-map"></i> See price</a>
+        <p id="js-maintenance"></p>
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+
+<!-- Domain Mobile View -->
+<div class="w3-container w3-black" style="padding: 0px 16px;" id="domain">
+  <div class="w3-row-padding ez-hide-medium">
+    <div class="w3-col m6">
+      <div class="w3-center">
+        <img style="width: 100%;" src="images/domain.png">
+      </div>
+    </div>
+    <div class="w3-col m6">
+      <h2 class="w3-center">Domain</h2>
+      <p class="w3-center"><b>A domain name is a special, distinctive address that is used to visit websites, such "facebook.com" and "google.com". Ezmasterdev can help in registering your very own domain name.</b></p>
+      <br>
+      <div class="w3-center">
+        <a href="#services" class="w3-button ez-hollow ez-trans"><i class="fa fa-map"></i> See price</a>
+        <p id="js-maintenance"></p>
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+
+
+<!-- Host -->
+<div class="w3-container w3-black" style="padding: 0px 16px;; background: url(images/BG-RHS3.png);" id="host">
+  <div class="w3-row-padding ez-hide-small">
+    <div class="w3-col m6" style="Margin-top: 130px;">
+      <h2 class="w3-center">Hosting</h2>
+      <br>
+      <p class="w3-center"><b>Web Hosting is a kind of Internet service that allows users to host websites online. It is basically renting a space for your website on the internet. Ezmasterdev can host your website for <span style="color: gold;">FREE</span>.</b></p>
+      <br>
+      <div class="w3-center">
+        <a href="#services" class="w3-button ez-hollow ez-trans"><i class="fa fa-map"></i> See price</a>
+        <p id="js-maintenance"></p>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="w3-col m6" style="padding-top: 135px; padding-bottom: 115px;">
+      <div class="w3-center">
+        <img style="width: 90%;" src="images/Host.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Host Mobile View -->
+<div class="w3-container w3-black" style="padding: 0px 16px;" id="host">
+  <div class="w3-row-padding ez-hide-medium">
+    <div class="w3-col m6">
+      <h2 class="w3-center">Hosting</h2>
+      <p class="w3-center"><b>Web Hosting is a kind of Internet service that allows users to host websites online. It is basically renting a space for your website on the internet. Ezmasterdev can host your website for <span style="color: gold;">FREE</span>.</b></p>
+      <br>
+      <div class="w3-center">
+        <a href="#services" class="w3-button ez-hollow ez-trans"><i class="fa fa-map"></i> See price</a>
+        <p id="js-maintenance"></p>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="w3-col m6">
+      <div class="w3-center">
+        <img style="width: 90%;" src="images/Host.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="w3-container w3-padding-64 w3-black w3-center" id="features">
+  <h1 class="w3-jumbo"><b>Features</b></h1>
+  <h4><b>that come with our services</b></h4>
+  <br>
+  <br>
+
+  <div class="w3-row">
+    <div class="w3-col s3">
+      <i class="fa fa-cog w3-text-amber w3-jumbo"></i>
+      <p>Support</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-heart w3-text-red w3-jumbo"></i>
+      <p>Passion</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-image w3-text-blue w3-jumbo"></i>
+      <p>Clarity</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-lock w3-text-green w3-jumbo"></i>
+      <p>Security</p>
+    </div>
+  </div>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-cloud w3-text-white w3-jumbo"></i>
+      <p>Cloud</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-hdd-o w3-text-cyan w3-jumbo"></i>
+      <p>Storage</p>
+    </div>
+    
+    <div class="w3-col s3">
+      <i class="fa fa-globe w3-text-yellow w3-jumbo"></i>
+      <p>Accessibility</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-diamond w3-text-cyan w3-jumbo"></i>
+      <p>Quality</p>
+    </div>
+  </div>
+  
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-shield w3-text-orange w3-jumbo"></i>
+      <p>Stability</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-wifi w3-text-grey w3-jumbo"></i>
+      <p>Connection</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-user w3-text-sand w3-jumbo"></i>
+      <p>User-friendly</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-desktop w3-text-pink w3-jumbo"></i>
+      <p>Design</p>
+    </div>
+  </div>
+</div>
+  <br>
+
+
+<!-- Slideshow -->
+<div class="w3-center" id="work">
+  <h1 class="w3-jumbo w3-text-white"><b>Projects</b></h1>
+</div>
+<div class="w3-display-container w3-center w3-black">
+  <h4><b>Browse some of our works</b></h4>
+  <br>
+  <br>
+
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="images/GAW-sample.png" style="object-fit: contain; width: 89%;">
+    <div class="w3-margin w3-text-white w3-container w3-padding-32">
+      <div class="w3-row">
+        <div class="w3-col w3-left w3-container" style="width:10%"><p></p></div>
+        <div class="w3-col w3-right w3-container" style="width:10%"><p></p></div>
+        <div class="w3-rest w3-container w3-black">
+          <h3 class="w3-center ">GRAB A WING</h3>
+          <p>
+            Grab a Wing is a buffalo wing restaurant that aims to satisfy their customers with their chicken wing cravings. Visit their website and see what Ezmasterdev is capable of creating. 
+          </p>
+          <br>
+        </div>
+      </div>
+      <span class="w3-red w3-round w3-button w3-padding-large ez-trans">
+        <i class="fa fa-globe"></i>
+        <a href="https://ezmasterdev.github.io/G.A.W-home/" target="_blank" style="text-decoration: none;">
+          &nbsp;Visit Site
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="images/MSM-sample.png" style="object-fit: contain; width: 89%;">
+    <div class="w3-margin w3-text-white w3-container w3-padding-32">
+      <div class="w3-row">
+        <div class="w3-col w3-left w3-container" style="width:10%"><p></p></div>
+        <div class="w3-col w3-right w3-container" style="width:10%"><p></p></div>
+        <div class="w3-rest w3-container w3-black">
+          <h3 class="w3-center ">MSM Enterprise</h3>
+          <p>
+            The MSM Milktea Enterprise is an innovative milk tea company in the tea industry. They serve various milktea flavors with pop pearls. Visit their website and see what Ezmasterdev is capable of creating.
+          </p>
+          <br>
+        </div>
+      </div>
+      <span class="w3-brown w3-round w3-button w3-padding-large ez-trans">
+        <i class="fa fa-globe"></i>
+        <a href="https://ezmasterdev.github.io/MSM/" target="_blank" style="text-decoration: none;">
+          &nbsp;Visit Site
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="images/Pampiri-sample.png" style="object-fit: contain; width: 89%;">
+    <div class="w3-margin w3-text-white w3-container w3-padding-32">
+      <div class="w3-row">
+        <div class="w3-col w3-left w3-container" style="width:10%"><p></p></div>
+        <div class="w3-col w3-right w3-container" style="width:10%"><p></p></div>
+        <div class="w3-rest w3-container w3-black">
+          <h3 class="w3-center ">Pampiri Supplies</h3>
+          <p>
+            Pampiri Office Supplies Trading is an office essentials supplier that can get your company stocked at all times. Visit their website and see what Ezmasterdev is capable of creating.
+          </p>
+          <br>
+        </div>
+      </div>
+      <span class="w3-light-blue w3-round w3-button w3-padding-large ez-trans">
+        <i class="fa fa-globe"></i>
+        <a href="https://ezmasterdev.github.io/Pampiri/" target="_blank" style="text-decoration: none;">
+          &nbsp;Visit Site
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <a class="w3-button w3-black w3-round w3-margin-right" onclick="plusDivs(-1)">&#10094;</a>
+
+  <a class="w3-button w3-black w3-round w3-hover-light-grey w3-border" onclick="currentDiv(1)">1</a>
+  <a class="w3-button w3-black w3-round w3-hover-light-grey w3-border" onclick="currentDiv(2)">2</a>
+  <a class="w3-button w3-black w3-round w3-hover-light-grey w3-border" onclick="currentDiv(3)">3</a>
+
+  <a class="w3-button w3-black w3-round w3-margin-left" onclick="plusDivs(1)">&#10095;</a>
+
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
 
 <!-- Packages Section -->
-<div class="w3-container w3-center w3-dark-grey w3-card " style="padding:128px 16px;" id="pricing">
-  <h3 class="">PACKAGES</h3>
-  <p class="w3-large ">Choose a plan that best suits your business needs.</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-third w3-section ">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32 ">Basic</li>
-        <li class="w3-padding-16 ">Landing page</li>
-        <li class="w3-padding-16 ">3 sections only</li>
-        <li class="w3-padding-16 ">Responsive web design<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Active customer support<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">No high maintenance needed<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Includes SSL certification<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Includes domain registration<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Includes FREE web hosting deal<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Includes search engine optimization<b> &#10003;</b></li>
-        <li class="w3-light-grey w3-padding-24">
-          <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-black w3-padding-large ">Inquire</a>
+<div class="w3-container w3-center w3-black" id="pricing">
+  <h1 class="w3-jumbo"><b>Choose a Plan</b></h1>
+  <h4><b>that best suits your business website needs</b></h4>
+
+  <div class="w3-container w3-center w3-text-white">
+
+    <div class="w3-row-padding" style="margin-top:45px">
+
+      <div class="w3-third w3-section">
+        <div class="ez-glass-bronze ez-box" style="border: 1px solid rgba(255,255,255,0.18); border-radius: 20px; cursor: pointer;">
+          <ul class="w3-ul">
+            <li class="w3-xlarge w3-padding-32" style="color: #cd7f32;"><b>Bronze</b></li>
+            <li class="w3-padding-16 ">1 page MAX</li>
+            <li class="w3-padding-16 ">Responsive design &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">domain registration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 "><b>FREE</b> web hosting &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">S . E . O &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">S . S . L &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">watermark removal &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">Active Support &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">Minimal maintenance &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-24">
+              <p><sup><s>&#8369; 2,000</s></sup> &nbsp;<span class="w3-large"><b>&#8369; 1,700</b></span></p>
+              <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-light-gray w3-padding w3-round">Inquire &nbsp;<i style="font-size:20px" class="fa">&#xf059;</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="w3-third w3-section">
+        <div class="ez-glass-silver ez-box" style="border: 1px solid rgba(255,255,255,0.18); border-radius: 20px; cursor: pointer;">
+          <ul class="w3-ul">
+            <li class="w3-xlarge w3-padding-32" style="color: silver"><b>Silver</b></li>
+            <li class="w3-padding-16 ">3 pages MAX</li>
+            <li class="w3-padding-16 ">Responsive design &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">domain registration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 "><b>FREE</b> web hosting &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">S . E . O &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">S . S . L &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">watermark removal &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">Active Support &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">Minimal maintenance &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-24">
+              <p><sup><s>&#8369; 3,000</s></sup> &nbsp;<span class="w3-large"><b>&#8369; 2,700</b></span></p>
+              <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-light-gray w3-padding w3-round">Inquire &nbsp;<i style="font-size:20px" class="fa">&#xf059;</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="w3-third w3-section">
+        <div class="ez-glass-gold ez-box" style="border: 1px solid rgba(255,255,255,0.18); border-radius: 20px; cursor: pointer;">
+          <ul class="w3-ul">
+            <li class="w3-xlarge w3-padding-32" style="color: gold"><b>Gold</b></li>
+            <li class="w3-padding-16 ">5 pages MAX</li>
+            <li class="w3-padding-16 ">Responsive design &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">domain registration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 "><b>FREE</b> web hosting &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">S . E . O &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">S . S . L &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">watermark removal &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">Active Support &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">Minimal maintenance &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-24">
+              <p><sup><s>&#8369; 4,000</s></sup> &nbsp;<span class="w3-large"><b>&#8369; 3,700</b></span></p>
+              <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-light-gray w3-padding w3-round">Inquire &nbsp;<i style="font-size:20px" class="fa">&#xf059;</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="w3-row-padding">
+
+        <div class="w3-third w3-section">
+          <div class="ez-glass ez-box" style="border: 1px solid rgba(255,255,255,0.18); cursor: pointer;">
+            <ul class="w3-ul">
+              <li class="w3-large w3-padding-32"><b>Basic</b></li>
+              <li class="w3-padding-16 ">1 page Max</li>
+              <li class="w3-padding-16 ">Responsive design &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">web hosting &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 "><b>FREE</b>&nbsp; S . S . L &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Active Support &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Minimal maintenance &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-24">
+                <p><sup><s>&#8369; 1,200</s></sup> &nbsp;<span class="w3-large"><b>&#8369; 999</b></span></p>
+                <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-light-gray w3-padding w3-round">Inquire &nbsp;<i style="font-size:20px" class="fa">&#xf059;</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="w3-third w3-section">
+          <div class="ez-glass ez-box" style="border: 1px solid rgba(255,255,255,0.18); cursor: pointer;">
+            <ul class="w3-ul">
+              <li class="w3-large w3-padding-32"><b>Pro</b></li>
+              <li class="w3-padding-16 ">3 pages Max</li>
+              <li class="w3-padding-16 ">Responsive design &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">web hosting &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 "><b>FREE</b>&nbsp; S . S . L &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Active Support &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Minimal maintenance &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-24">
+                <p><sup><s>&#8369; 2,200</s></sup> &nbsp;<span class="w3-large"><b>&#8369; 1,999</b></span></p>
+                <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-light-gray w3-padding w3-round">Inquire &nbsp;<i style="font-size:20px" class="fa">&#xf059;</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="w3-third w3-section">
+          <div class="ez-glass ez-box" style="border: 1px solid rgba(255,255,255,0.18); cursor: pointer;">
+            <ul class="w3-ul">
+              <li class="w3-large w3-padding-32"><b>Premium</b></li>
+              <li class="w3-padding-16 ">5 pages Max</li>
+              <li class="w3-padding-16 ">Responsive design &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">web hosting &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 "><b>FREE</b>&nbsp; S . S . L &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Active Support &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Minimal maintenance &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-24">
+                <p><sup><s>&#8369; 3,200</s></sup> &nbsp;<span class="w3-large"><b>&#8369; 2,999</b></span></p>
+                <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-light-gray w3-padding w3-round">Inquire &nbsp;<i style="font-size:20px" class="fa">&#xf059;</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+    
+    <br>
+    <br>
+    <div id="services">
+      <h3><b>Individual services you might be interested in</b></h3>
+    </div>
+    <br>
+
+    <div class="w3-section ez-glass w3-hover-light-grey ez-trans" style="border: 1px solid rgba(255,255,255,0.18); width: 97.5%; margin: 1%; cursor: pointer;">
+      <ul class="w3-ul">
+        <li class="w3-large w3-padding-32" style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <b>Watermark removal</b>
+          </div>
+          <div>
+            <p class="w3-large" style="display: inline-block;"><b>&#8369; 50</b>&nbsp;</p>
+            <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-light-gray w3-padding w3-round" style="border: black solid 1px;">Inquire &nbsp;<i style="font-size:20px" class="fa">&#xf059;</i></a>
+          </div>
         </li>
       </ul>
     </div>
-    <div class="w3-third ">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-32 ">Pro</li>
-        <li class="w3-padding-16 ">3 pages</li>
-        <li class="w3-padding-16 ">Multiple sections</li>
-        <li class="w3-padding-16 ">Responsive web design<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Active customer support<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">No high maintenance needed<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Includes SSL certification<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Includes domain registration<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Includes FREE web hosting deal<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Includes search engine optimization<b> &#10003;</b></li>
-        <li class="w3-light-grey w3-padding-24">
-          <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-black w3-padding-large ">Inquire</a>
+
+    <div class="w3-section ez-glass w3-hover-light-grey ez-trans" style="border: 1px solid rgba(255,255,255,0.18); width: 97.5%; margin: 1%; cursor: pointer;">
+      <ul class="w3-ul">
+        <li class="w3-large w3-padding-32" style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <b>Domain Registration</b>
+          </div>
+          <div>
+            <p class="w3-large" style="display: inline-block;"><b>&#8369; 500</b>&nbsp;</p>
+            <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-light-gray w3-padding w3-round" style="border: black solid 1px;">Inquire &nbsp;<i style="font-size:20px" class="fa">&#xf059;</i></a>
+          </div>
         </li>
       </ul>
     </div>
-    <div class="w3-third w3-section ">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32 ">Premium</li>
-        <li class="w3-padding-16 ">5 pages</li>
-        <li class="w3-padding-16 ">Multiple sections</li>
-        <li class="w3-padding-16 ">Responsive web design<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Active customer support<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">No high maintenance needed<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Includes SSL certification<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Includes domain registration<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Includes FREE web hosting deal<b> &#10003;</b></li>
-        <li class="w3-padding-16 ">Includes search engine optimization<b> &#10003;</b></li>
-        <li class="w3-light-grey w3-padding-24">
-          <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-black w3-padding-large ">Inquire</a>
+
+    <div class="w3-section ez-glass w3-hover-light-grey ez-trans" style="border: 1px solid rgba(255,255,255,0.18); width: 97.5%; margin: 1%; cursor: pointer;">
+      <ul class="w3-ul">
+        <li class="w3-large w3-padding-32" style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <b>Website Hosting</b>
+          </div>
+          <div>
+            <p class="w3-large" style="display: inline-block;"><b>&#8369; 300</b>&nbsp;</p>
+            <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-light-gray w3-padding w3-round" style="border: black solid 1px;">Inquire &nbsp;<i style="font-size:20px" class="fa">&#xf059;</i></a>
+          </div>
         </li>
       </ul>
     </div>
+
+    <div class="w3-section ez-glass w3-hover-light-grey ez-trans" style="border: 1px solid rgba(255,255,255,0.18); width: 97.5%; margin: 1%; cursor: pointer;">
+      <ul class="w3-ul">
+        <li class="w3-large w3-padding-32" style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <b>S . E . O &nbsp;Indexing</b>
+          </div>
+          <div>
+            <p class="w3-large" style="display: inline-block;"><b>&#8369; 250</b>&nbsp;</p>
+            <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-light-gray w3-padding w3-round" style="border: black solid 1px;">Inquire &nbsp;<i style="font-size:20px" class="fa">&#xf059;</i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-section ez-glass w3-hover-light-grey ez-trans" style="border: 1px solid rgba(255,255,255,0.18); width: 97.5%; margin: 1%; cursor: pointer;">
+      <ul class="w3-ul">
+        <li class="w3-large w3-padding-32" style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <b>S . S . L &nbsp;Certificate</b>
+          </div>
+          <div>
+            <p class="w3-large" style="display: inline-block;"><b>&#8369; 200</b>&nbsp;</p>
+            <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-light-gray w3-padding w3-round" style="border: black solid 1px;">Inquire &nbsp;<i style="font-size:20px" class="fa">&#xf059;</i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-section ez-glass w3-hover-light-grey ez-trans" style="border: 1px solid rgba(255,255,255,0.18); width: 97.5%; margin: 1%; cursor: pointer;">
+      <ul class="w3-ul">
+        <li class="w3-large w3-padding-32" style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <b>Additional Page(s)</b>
+          </div>
+          <div>
+            <p class="w3-large" style="display: inline-block;"><b>&#8369; 500 / page</b>&nbsp;</p>
+            <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank" class="w3-button w3-light-gray w3-padding w3-round" style="border: black solid 1px;">Inquire &nbsp;<i style="font-size:20px" class="fa">&#xf059;</i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
   </div>
 </div>
-
-<br>
-<br>
-<br>
 <br>
 <br>
 
-<!-- FAQs Section -->
-<div class="w3-container w3-light-grey " style="padding:75px 20px" id="faq">
-  <h3 class="w3-center ">Frequently Asked Questions</h3>
-  <br>
-  <br>
-
-  <div class="w3-dropdown-hover w3-border w3-white" style="display: block; margin-bottom: 1%;">
-    <div class="w3-center w3-button w3-card " style="display: block;">
-      <p class="" style="display: block;"><h4>What are websites?&#160;<i class="fa fa-caret-down"></i></h4></p>
-    </div>    
-    <div class="w3-center w3-dropdown-content">
-      <p>A website is a collection of web pages and related content that is published on at least one web server and given a common domain name. Websites are frequently devoted to a specific subject or objective, such as news, education, business, entertainment, or social networking.</p>
-    </div>
-  </div>
-
-  <div class="w3-dropdown-hover w3-border w3-white" style="display: block; margin-bottom: 1%;">
-    <div class="w3-center w3-button w3-card " style="display: block;">
-      <p class="" style="display: block;"><h4>Who creates websites?&#160;<i class="fa fa-caret-down"></i></h4></p>
-    </div>    
-    <div class="w3-center w3-dropdown-content">
-      <p>A web developer is someone who creates and updates a website's fundamental framework. A web developer must also be a seasoned designer that possesses a wide range of technical, graphic, and creative abilities.</p>
-    </div>
-  </div>
-
-  <div class="w3-dropdown-hover w3-border w3-white" style="display: block; margin-bottom: 1%;">
-    <div class="w3-center w3-button w3-card " style="display: block;">
-      <p class="" style="display: block;"><h4>Why does your business need it?&#160;<i class="fa fa-caret-down"></i></h4></p>
-    </div>    
-    <div class="w3-center w3-dropdown-content">
-      <p>In today's digital age, a small business needs a website to boost sales. Without a website, you lose most, if not all, of your potential customers because they won't be able to find out any information about you or your company's products or services.</p>
-    </div>
-  </div>
-
-  <div class="w3-dropdown-hover w3-border w3-white" style="display: block; margin-bottom: 1%;">
-    <div class="w3-center w3-button w3-card " style="display: block;">
-      <p class="" style="display: block;"><h4>Why choose Ezmasterdev?&#160;<i class="fa fa-caret-down"></i></h4></p>
-    </div>    
-    <div class="w3-center w3-dropdown-content">
-      <p>Ezmasterdev understands that in the age of digital marketing, it is of paramount importance that businesses regardless of scale, should have the opportunity to be able to present their brand online. Ezmasterdev create not with haste but with passion for a very friendly price.</p>
-    </div>
-  </div>
-
-  <div class="w3-dropdown-hover w3-border w3-white" style="display: block; margin-bottom: 1%;">
-    <div class="w3-center w3-button w3-card " style="display: block;">
-      <p class="" style="display: block;"><h4>When should your business have one?&#160;<i class="fa fa-caret-down"></i></h4></p>
-    </div>    
-    <div class="w3-center w3-dropdown-content">
-      <p>Without a website, customers could doubt your company's credibility. Having a website gives you the chance to make a fantastic first impression and reassure potential customers that you are a legitimate company. One of the most crucial things you can do is present your brand to potential buyers online. It is ideal to have one as soon as your business takes off.</p>
-    </div>
-  </div>
-
-  <div class="w3-dropdown-hover w3-border w3-white" style="display: block; margin-bottom: 1%;">
-    <div class="w3-center w3-button w3-card " style="display: block;">
-      <p class="" style="display: block;"><h4>How are websites made?&#160;<i class="fa fa-caret-down"></i></h4></p>
-    </div>    
-    <div class="w3-center w3-dropdown-content">
-      <p>A group of codes or programming languages are used to create websites. The most used languages for creating websites are: HTML, which enables browsers to display webpage elements including text, links, and media. Web page styles, including colors, fonts, and layouts, are defined using CSS.
-      </p>
-    </div>
-  </div>
-
+<!-- Globe -->
+<div class="w3-center">
+  <img src="images/globe.gif" style="width: 100%;">
 </div>
-
-<!-- Image of location/map -->
-<img src="images/bottom-pic.png" class="w3-image w3-greyscale " style="width:100%; padding: 10%;">
-
+<br>
+<br>
 <!-- Footer -->
-<footer class="w3-center w3-dark-grey w3-padding-64 w3-card">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
+
+<div class="w3-row">
+  <div class="w3-col w3-left w3-container" style="width:5%"><p></p></div>
+  <div class="w3-col w3-right w3-container" style="width:5%"><p></p></div>
+  <div class="w3-rest w3-container w3-black w3-border">
   </div>
-   <div class="w3-center w3-text-light-grey w3-xxlarge" style="cursor: pointer;">
-    <a href="https://www.facebook.com/people/EZmasterdev/100091732606552/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity" style="text-decoration: none;"></i></a>
-      <span style="text-decoration: none; font-size: 15px;"></span>
+</div>
+
+<footer class="w3-padding-64 w3-black w3-small w3-center" id="footer">
+  <div class="w3-row-padding">
+    <div class="w3-col s4">
+      <img class="w3-card w3-circle" src="images/EZ-logo.png" style="height: 100px; width: 100px;">
+      <h4 style="font-size: 25px;"><b>Ezmasterdev</b></h4>
+      <br>
+      <div class="w3-text-light-grey w3-hover-text-yellow">
+        <a href="tel:+63 993 405 0086" target="_blank"  style="text-decoration: none;"><i class="fa fa-phone w3-large"></i><span style="text-decoration: none; font-size: 12.5px;">&nbsp; +63 993 405 0086</span></a>
+      </div>
+      <div class="w3-text-light-grey w3-hover-text-yellow">
+        <a href="mailto:ezmasterdev28@gmail.com" target="_blank"  style="text-decoration: none;"><i class="fa fa-envelope w3-large"></i><span style="text-decoration: none; font-size: 12.5px;">&nbsp; Google Email</span></a>
+      </div>
+      <div class="w3-text-light-grey w3-hover-text-yellow">
+        <a href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" target="_blank"  style="text-decoration: none;"><i class="fa fa-facebook-official w3-large"></i><span style="text-decoration: none; font-size: 12.5px;">&nbsp; Facebook Page</span></a>
+      </div>
+      <div class="w3-text-light-grey w3-hover-text-yellow">
+        <a href="https://github.com/ezmasterdev" target="_blank"  style="text-decoration: none;"><i class="fa fa-github w3-large"></i><span style="text-decoration: none; font-size: 12.5px;">&nbsp; GitHub Repositories</span></a>
+      </div>
+    </div>
+
+    <div class="w3-col s4">
+      <h4><a href="#features" class="w3-hover-text-yellow" style="text-decoration: none;"><u>Features</u></a></h4>
+      <p>Support</p>
+      <p>Passion</p>
+      <p>Clarity</p>
+      <p>Security</p>
+      <p>Cloud</p>
+      <p>Storage</p>
+      <p>Accessibility</p>
+      <p>Quality</p>
+      <p>Stability</p>
+      <p>Connection</p>
+      <p>User-friendly</p>
+      <p>Design</p>
+    </div>
+
+    <div class="w3-col s4 w3-justify">
+      <h4><a href="#about" class="w3-hover-text-yellow" style="text-decoration: none;"><u>About</u></a></h4>
+      <p><a href="#responsive" class="w3-hover-text-yellow" style="text-decoration: none;">Responsive Website</a></p>
+      <p><a href="#seo" class="w3-hover-text-yellow" style="text-decoration: none;">S.E.O Indexing</a></p>
+      <p><a href="#ssl" class="w3-hover-text-yellow" style="text-decoration: none;">S.S.L Certificate</a></p>
+      <p><a href="#domain" class="w3-hover-text-yellow" style="text-decoration: none;">Domain Registration</a></p>
+      <p><a href="#host" class="w3-hover-text-yellow" style="text-decoration: none;">Website Hosting Deal</a></p>
+      <br>
+      <h4><a href="#pricing" class="w3-hover-text-yellow" style="text-decoration: none;"><u>Packages</u></a></h4>
+      <p>Basic Bundle</p>
+      <p>Pro Bundle</p>
+      <p>Premium Bundle</p>
+      <p>Bronze Package</p>
+      <p>Silver Package</p>
+      <p>Gold Package</p>
+    </div>
   </div>
-  <p><i>ezmasterdev28@gmail.com</i></p>
-  <p>© 2023 Ezmasterdev</p>
 </footer>
- 
+
+<div class="w3-dark-gray w3-center w3-padding-16">
+  <p>© 2023 Ezmasterdev. All rights reserved.</p>
+</div>
+
 <script>
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
@@ -485,24 +794,34 @@ function w3_close() {
 </script>
 
 <script>
-  // Slideshow
-  var slideIndex = 1;
+// Slide show
+var slideIndex = 1;
   showDivs(slideIndex);
   
   function plusDivs(n) {
     showDivs(slideIndex += n);
   }
   
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
   function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}    
     if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";  
     }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-red", "");
+    }
     x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-red";
   }
-  </script>
+</script>
+
 </body>
 </html>
