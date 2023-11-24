@@ -8,26 +8,6 @@ cursor {
     cursor: pointer;
 }
 
-.back-video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .back-video {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .back-video {
-        width: auto;
-        height: 100%;
-    }
-}
 
 .content1 {
     transition: 0.5s;
@@ -78,3 +58,77 @@ cursor {
       opacity: 1;
     }
 }
+
+body,h1,h2,h3,h4,h5,h6 {font-family:"Railway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  background-color: black;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/header-pic.png");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.ez-glass {
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+.ez-glass-bronze {
+  background: linear-gradient(135deg, rgba(205, 127, 50,0.1), rgba(205, 127, 50,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+.ez-glass-silver {
+  background: linear-gradient(135deg, rgba(192,192,192,0.1), rgba(192,192,192,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+.ez-glass-gold {
+  background: linear-gradient(135deg, rgba(255, 215, 0,0.1), rgba(255, 215, 0,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+.ez-hollow {
+    border: 1px solid white;
+    border-radius: 25px;
+}
+.ez-box {transition: 1s;}
+.ez-box:hover {transform: scale(1.025); z-index: 2;}
+
+.ez-trans {
+    transition: 0.8s;
+}
+
+@media (max-width:875px) {
+    .ez-hide-small {
+        display:none!important;
+    }
+ }
+ 
+   @media (max-width:825px) {
+ .ez-hide-small {
+     display:none!important;
+ }
+ }
+ 
+ @media (max-width:2000px) and (min-width:875px) {
+     .ez-hide-medium {
+         display:none!important;
+     }
+ }
+  
