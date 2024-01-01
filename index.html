@@ -19,6 +19,12 @@
     display:none!important;
 }
 }
+.ez-bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/Jumbotron.png);
+    min-height: 100%;
+}
 </style>
 </head>
 <body>
@@ -62,20 +68,19 @@
 </div>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1" id="home">
-    <img src="images/top-image.png" style="width: 100%;">
-    <br>
-    <div class="w3-display-left w3-text-white" style="padding:48px;">
-      <span class="w3-jumbo ez-hide-small content1"><b>Boost your online presence</b></span><br>
-      <span class="w3-xxlarge ez-hide-large ez-hide-medium content1"><b>Boost your online presence</b></span><br>
-      <span class="w3-large"><b>Take up space and compete in the digital market with your very own website.</b></span>
-      <p><a href="#about" class="w3-button ez-hollow w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off ez-trans">Learn more and start today</a></p>
-    </div>
-    <br>
+<header class="ez-bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px;">
+    <span class="w3-jumbo ez-hide-small content1"><b>Boost your online presence</b></span><br>
+    <span class="w3-xxlarge ez-hide-large ez-hide-medium content1"><b>Boost your online presence</b></span><br>
+    <span class="w3-large"><b>Take up space and compete in the digital market with your very own website.</b></span>
+    <p><a href="#about" class="w3-button ez-hollow w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off ez-trans">Learn more and start today</a></p>
+  </div>
 </header>
 
 <a href="#top" class="to-top-button">
-  <img class="chev-up-icon" src="images/arrow-up-icon.png">
+  <div class="to-top-button w3-white w3-circle" style="padding: 1%;">
+    <i style="font-size:24px;" class="fa">&#xf077;</i>
+  </div>
 </a>
 <section id="top"></section>
 
