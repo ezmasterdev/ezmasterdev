@@ -1,19 +1,22 @@
-
 <!DOCTYPE html>
 
 <html>
 
-    <head>
+  <head>
         <title>Ezmasterdev</title>
 
         <!-- Meta -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!-- Icon -->
-        <link rel="icon" href="images/EZ-logo.png">
-        <link rel="icon" href="/path/to/favicon.ico">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#1d1d1d">
+        <meta name="msapplication-TileColor" content="#1d1d1d">
+        <meta name="theme-color" content="#ffffff">
 
         <!-- CSS -->
         <link rel="stylesheet" href="styles.css">
@@ -23,779 +26,788 @@
         <!-- JS -->
         <script src="https://www.w3schools.com/lib/w3.js"></script>
 
-    </head>
+  </head>
 
-<body style="background-color: whitesmoke">
+  <body style="background-color: whitesmoke">
 
 
 
-<!-- Loading Screen -->
-<div class="loading-screen">
-  <div class="bounce-container">
-      <img src="images/EZ-logo.png" alt="Bouncing Image" class="bouncing-image">
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="bounce-container">
+        <img src="images/EZ-logo.png" alt="Bouncing Image" class="bouncing-image">
+    </div>
+    <br>
+    <h3><b>Welcome to Ezmasterdev!</b></h3>
+    <p>Loading...</p>
   </div>
-  <br>
-  <h3><b>Welcome to Ezmasterdev!</b></h3>
-  <p>Loading...</p>
-</div>
 
 
 
-<!-- Navbar -->
-<div class="w3-top">
-  <nav class="w3-bar w3-card-4 w3-left-align w3-text-dark-gray ez-glass">
+  <!-- Navbar -->
+  <div class="w3-top">
+    <nav class="w3-bar w3-card-4 w3-left-align w3-text-dark-gray ez-glass">
 
-    <a class="w3-bar-item ez-hide-custom w3-right w3-xlarge" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i>
-    </a>
-
-    <div class="w3-left">
-      <a href="#home" class="w3-bar-item w3-wide" style="text-decoration: none;">
-        <img class="w3-circle" src="images/EZ-logo.png" style="height: 40px; width: 40px; padding: 0%;">
-        <span class="w3-text-dark-gray">EZMASTERDEV</span>
+      <a class="w3-bar-item ez-hide-custom w3-right w3-xlarge" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i>
       </a>
-    </div>
 
-    <div class="w3-right">
-      <a href="#about" class="w3-bar-item ez-hide-small w3-button ez-trans" style="padding: 16px;"><i class="fa fa-user"></i> ABOUT</a>
-
-      <a href="#projects" class="w3-bar-item ez-hide-small w3-button ez-trans" style="padding: 16px;"><i class="fa fa-desktop"></i> PROJECTS</a>
-
-      <a href="#services1" class="w3-bar-item ez-hide-small w3-button ez-trans" style="padding: 16px;"><i class="fa fa-th"></i> SERVICES</a>
-  
-      <a href="#packages1" class="w3-bar-item ez-hide-small w3-button ez-trans" style="padding: 16px;"><i class="fa fa-archive"></i> PACKAGES</a>
-  
-      <a href="#message" class="w3-bar-item ez-hide-small w3-button ez-trans" style="padding: 16px;"><i class="fa fa-envelope"></i> MESSAGE</a>
-    </div>
-
-  </nav>
-
-  <!-- Navbar on small screens -->
-  <nav id="navDemo" class="w3-bar-block ez-glass w3-hide ez-hide-medium w3-text-dark-gray w3-card-4 w3-animate-right">
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large ez-trans"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#projects" class="w3-bar-item w3-button w3-padding-large ez-trans"><i class="fa fa-desktop"></i> PROJECTS</a>
-    <a href="#services2" class="w3-bar-item w3-button w3-padding-large ez-trans"><i class="fa fa-th"></i> SERVICES</a>
-    <a href="#packages2" class="w3-bar-item w3-button w3-padding-large ez-trans"><i class="fa fa-archive"></i> PACKAGES</a>
-    <a href="#message" class="w3-bar-item w3-button w3-padding-large ez-trans"><i class="fa fa-envelope"></i> MESSAGE</a>
-  </nav>
-</div>
-
-
-
-<!-- Header Slider START -->
-<header class="slideshow-container">
-      
-    <div class="mySlides w3-black">
-        <div class="fade ez-hide-small">
-            <img src="images/slide1.png" style="width:100%">
-        </div>
-        <div class="fade ez-hide-medium">
-            <img src="images/slider1.png" style="width:100%">
-        </div>
-    </div>
-      
-    <div class="mySlides w3-black ">
-        <div class="fade ez-hide-small">
-            <img src="images/slide2.png" style="width:100%">
-        </div>
-        <div class="fade ez-hide-medium">
-            <img src="images/slider2.png" style="width:100%">
-        </div>
-    </div>
-      
-    <div class="mySlides w3-black">
-        <div class="fade ez-hide-small">
-            <img src="images/slide3.png" style="width:100%">
-        </div>
-        <div class="fade ez-hide-medium">
-            <img src="images/slider3.png" style="width:100%">
-        </div>
-    </div>
-      
-    <a class="prev" onclick="minusSlides(1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-</header>
-  <br>
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-  </div>
-  <br>
-  <script>
-
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function minusSlides(n) {
-      showSlides(slideIndex -= n);
-      let
-    }
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-
-  </script>
-  <!-- Header Slider END -->
-
-
-
-<!-- to-Top button START -->
-<a href="#top" class="to-top-button">
-    <div class="to-top-button w3-white w3-circle" style="padding: 1%;">
-    <i style="font-size:24px;" class="fa">&#xf077;</i>
-    </div>
-</a>
-<section id="top"></section>
-<!-- to-Top button END -->
-
-
-
-  <!-- About Section START -->
-  <br>
-  <div class="w3-row w3-padding-32" id="about">
-    <div class="w3-col w3-left w3-container" style="width:10%"><p></p></div>
-    <div class="w3-col w3-right w3-container" style="width:10%"><p></p></div>
-    <div class="w3-rest w3-container">
-      <div class="ez-box ez-hover-teal">
-        <h3 class="w3-center"><i class="fa fa-user w3-jumbo"></i></h3>
-        <h3 class="w3-center">ABOUT EZMASTERDEV</h3>
-        <p class="w3-center w3-medium" style="padding-bottom: 30px; padding-top: 15px;">
-             Ezmasterdev is a web developer that offers to create your very own business website for a cheap price. Take your presence to a whole new level and compete in the digital market with Ezmasterdev. Gain a huge advantage over your business competitors by becoming accessible to your customers on the internet. Choose a plan in the packages section that best suits your business needs and Ezmasterdev will take care of the rest.
-        </p>
+      <div class="w3-left">
+        <a href="#home" class="w3-bar-item w3-wide" style="text-decoration: none;">
+          <img class="w3-circle" src="images/EZ-logo.png" style="height: 40px; width: 40px; padding: 0%;">
+          <span class="w3-text-dark-gray">EZMASTERDEV</span>
+        </a>
       </div>
-      <div class="w3-row-padding w3-center" style="margin-top:px">
-        <div>
-            <div class="w3-third ez-box ez-hover-teal">
-                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Passion</p>
-                <p>Ezmasterdev creates not with haste but with passion. It is a top priority to ensure that your website meets a certain level of quality for a great user experience.</p>
-            </div>
-        </div>
-        <div>
-            <div class="w3-third ez-box ez-hover-teal">
-                <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Design</p>
-                <p>Ezmasterdev will definitely design your website that best aligns with the overall aesthetics of your business and keep its unique atmosphere intact. </p>
-            </div>
-        </div>
-        <div>
-            <div class="w3-third ez-box ez-hover-teal">
-                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Support</p>
-                <p>Ezmasterdev understands that website processes are quite difficult to understand. You can ask for support anytime by messaging us on our various outlets.</p>
-            </div>
-        </div>
+
+      <div class="w3-right">
+        <a href="#about" class="w3-bar-item ez-hide-small w3-button ez-trans" style="padding: 16px;"><i class="fa fa-user"></i> ABOUT</a>
+
+        <a href="#projects" class="w3-bar-item ez-hide-small w3-button ez-trans" style="padding: 16px;"><i class="fa fa-desktop"></i> PROJECTS</a>
+
+        <a href="#services1" class="w3-bar-item ez-hide-small w3-button ez-trans" style="padding: 16px;"><i class="fa fa-th"></i> SERVICES</a>
+    
+        <a href="#packages1" class="w3-bar-item ez-hide-small w3-button ez-trans" style="padding: 16px;"><i class="fa fa-archive"></i> PACKAGES</a>
+    
+        <a href="#message" class="w3-bar-item ez-hide-small w3-button ez-trans" style="padding: 16px;"><i class="fa fa-envelope"></i> MESSAGE</a>
       </div>
+
+    </nav>
+
+    <!-- Navbar on small screens -->
+    <nav id="navDemo" class="w3-bar-block ez-glass w3-hide ez-hide-medium w3-text-dark-gray w3-card-4 w3-animate-right">
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large ez-trans"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#projects" class="w3-bar-item w3-button w3-padding-large ez-trans"><i class="fa fa-desktop"></i> PROJECTS</a>
+      <a href="#services2" class="w3-bar-item w3-button w3-padding-large ez-trans"><i class="fa fa-th"></i> SERVICES</a>
+      <a href="#packages2" class="w3-bar-item w3-button w3-padding-large ez-trans"><i class="fa fa-archive"></i> PACKAGES</a>
+      <a href="#message" class="w3-bar-item w3-button w3-padding-large ez-trans"><i class="fa fa-envelope"></i> MESSAGE</a>
+    </nav>
+  </div>
+
+
+
+    <!-- Header Slider START -->
+    <header class="slideshow-container">
+        
+      <div class="mySlides w3-black">
+          <div class="fade ez-hide-small">
+              <img src="images/slide1.png" style="width:100%">
+          </div>
+          <div class="fade ez-hide-medium">
+              <img src="images/slider1.png" style="width:100%">
+          </div>
+      </div>
+        
+      <div class="mySlides w3-black ">
+          <div class="fade ez-hide-small">
+              <img src="images/slide2.png" style="width:100%">
+          </div>
+          <div class="fade ez-hide-medium">
+              <img src="images/slider2.png" style="width:100%">
+          </div>
+      </div>
+        
+      <div class="mySlides w3-black">
+          <div class="fade ez-hide-small">
+              <img src="images/slide3.png" style="width:100%">
+          </div>
+          <div class="fade ez-hide-medium">
+              <img src="images/slider3.png" style="width:100%">
+          </div>
+      </div>
+        
+      <a class="prev" onclick="minusSlides(1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+    </header>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
-  </div>
-  <br>
-  <!-- About Section END -->
+    <br>
+    <script>
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function minusSlides(n) {
+        showSlides(slideIndex -= n);
+        let
+      }
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+
+    </script>
+    <!-- Header Slider END -->
 
 
 
-  <!-- divider START-->
-  <div class="ez-hide-small">
-    <div class="window"></div>
-  </div>
-  <div class="ez-hide-medium">
-    <div class="window-null"></div>
-  </div>
-  <!-- divider END-->
+    <!-- to-Top button START -->
+    <a href="#top" class="to-top-button">
+        <div class="to-top-button w3-white w3-circle" style="padding: 1%;">
+        <i style="font-size:24px;" class="fa">&#xf077;</i>
+        </div>
+    </a>
+    <section id="top"></section>
+    <!-- to-Top button END -->
 
 
 
-  <!-- projects START -->
-  <br>
-  <div class="w3-padding-32" id="projects">
-    <div class="w3-row">
-        <div class="w3-col w3-left w3-container" style="width: 2.5%"><p></p></div>
-        <div class="w3-col w3-right w3-container" style="width: 2.5%"><p></p></div>
-        <div class="w3-rest w3-container">
+    <!-- About Section START -->
+    <br>
+    <div class="w3-row w3-padding-32" id="about">
+      <div class="w3-col w3-left w3-container" style="width:7%"><p></p></div>
+      <div class="w3-col w3-right w3-container" style="width: 7%"><p></p></div>
+      <div class="w3-rest w3-container">
+        <div class="ez-box ez-hover-teal">
+          <h3 class="w3-center"><i class="fa fa-user w3-jumbo"></i></h3>
+          <h3 class="w3-center">ABOUT EZMASTERDEV</h3>
+          <p class="w3-center w3-medium" style="padding-bottom: 30px; padding-top: 15px;">
+              Ezmasterdev is a web developer that offers to create your very own business website for a cheap price. Take your presence to a whole new level and compete in the digital market with Ezmasterdev. Gain a huge advantage over your business competitors by becoming accessible for your customers on the internet. Choose a plan in the packages section that best suits your business needs and Ezmasterdev will take care of the rest.
+          </p>
+        </div>
+        <div class="w3-container w3-row-padding w3-center" style="margin-top:px">
           <div>
-            <h3 class="w3-center"><b>BROWSE SOME OF OUR WORKS</b></h3>
-            <p class="w3-center w3-medium" style="padding-bottom: 30px; padding-top: 15px;">
-                Below are some of Ezmasterdev's completed projects. Each project serves as a testament of Ezmasterdev's skills in website development and digital craftsmanship.<br>
-                <br><span class="w3-center w3-small w3-text-gray">(Click each project to browse their respective sites.)</span>
-            </p>
+              <div class="w3-quarter ez-box ez-hover-teal">
+                  <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                  <p class="w3-large">Passion</p>
+                  <p>Ezmasterdev creates not with haste but with passion. It is a top priority to ensure that your website meets a certain level of quality for a great user experience.</p>
+              </div>
           </div>
-          <div class="w3-row-padding w3-center" style="margin-top:px">
-            <div>
-                <a href="https://ezmasterdev.github.io/G.A.W-home/" target="_blank" class="w3-third ez-box w3-hover-opacity" style="cursor: pointer;">
-                    <img alt="Grab A Wing" src="images/proj1.png" width="100%">
-                </a>
-            </div>
-            <div>
-                <a href="https://ezmasterdev.github.io/MSM/" target="_blank" class="w3-third ez-box w3-hover-opacity">
-                    <img alt="MSM Enterprise" src="images/proj2.png" width="100%">
-                </a>
-            </div>
-            <div>
-              <a href="https://ezmasterdev.github.io/Pampiri/" target="_blank" class="w3-third ez-box w3-hover-opacity">
-                  <img alt="Pampiri Office Supplies" src="images/proj3.png" width="100%">
-              </a>
-            </div>
+          <div>
+              <div class="w3-quarter ez-box ez-hover-teal">
+                  <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                  <p class="w3-large">Design</p>
+                  <p>Ezmasterdev will definitely design your website that best aligns with the overall aesthetics of your business and keep its unique atmosphere intact. </p>
+              </div>
           </div>
+          <div>
+              <div class="w3-quarter ez-box ez-hover-teal">
+                  <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                  <p class="w3-large">Support</p>
+                  <p>Ezmasterdev understands that website processes are quite difficult to understand. You can ask for support anytime by messaging us on our various outlets.</p>
+              </div>
+          </div>
+          <div>
+            <div class="w3-quarter ez-box ez-hover-teal">
+                <i class="fa fa-clock-o w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Time-bound</p>
+                <p>Ezmasterdev works with precision and speed. As a time-bound web agency, we specialize in developing cutting-edge websites where excellence meets deadlines.</p>
+            </div>
         </div>
-      </div>
-      <div class="w3-row" id="about">
-        <div class="w3-col w3-left w3-container" style="width: 2.5%"><p></p></div>
-        <div class="w3-col w3-right w3-container" style="width: 2.5%"><p></p></div>
-        <div class="w3-rest w3-container">
-          <div class="w3-row-padding w3-center" style="margin-top:px">
-            <div>
-              <a href="https://mingtengs.online/index.html" target="_blank" class="w3-third ez-box w3-hover-opacity">
-                  <img alt="MingTeng's Kinalasan" src="images/proj4.png" width="100%">
-              </a>
-            </div>
-            <div>
-              <a href="https://www.4m-ezprint.shop/" target="_blank" class="w3-third ez-box w3-hover-opacity">
-                  <img alt="4M EZ Print" src="images/proj5.png" width="100%">
-              </a>
-            </div>
-            <div>
-              <a href="https://vajanelaurine.com/" target="_blank" class="w3-third ez-box w3-hover-opacity">
-                  <img alt="V.A Portfolio" src="images/proj6.png" width="100%">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-  <br>
-  <!-- projects END -->
-
-
-
-  <!-- services START -->
-  <br>
-  <div class="w3-container w3-text-white ez-hide-small" id="services1" style="padding:128px 16px; background-color: gray;">
-    <div class="w3-row-padding">
-      <div class="w3-col m6">
-        <h3>Website Development Services</h3>
-        <br>
-        <p>Ezmasterdev's Website development services encompass the expert creation and enhancement of websites to meet diverse digital needs. Ezmasterdev employs a range of programming languages, frameworks, and tools to build robust, responsive, and visually appealing websites.</p>
-        <br>
-        <p><a href="#message" class="w3-button ez-trans w3-black">Interested? <i class="fa fa-arrow-right"></i></a></p>
-        <br>
-      </div>
-      <div class="w3-col m6">
-        <video class="w3-image w3-round-large" controls>
-            <source src="images/video.mp4" type="video/mp4">
-            Your browser does not support HTML video.
-        </video>
       </div>
     </div>
-  </div>
-  <div class="w3-container w3-text-white ez-hide-medium" id="services2" style="padding:128px 16px; background-color: gray;">
-    <div class="w3-row-padding">
-      <div>
-        <h3>Website Development Services</h3>
-        <br>
-        <p>Ezmasterdev's Website development services encompass the expert creation and enhancement of websites to meet diverse digital needs. Ezmasterdev employs a range of programming languages, frameworks, and tools to build robust, responsive, and visually appealing websites.</p>
-        <br>
-        <p><a href="#message" class="w3-button ez-trans w3-black">Interested? <i class="fa fa-arrow-right"></i></a></p>
-        <br>
-      </div>
-      <div>
-        <video class="w3-image w3-round-large" controls>
-            <source src="images/video.mp4" type="video/mp4">
-            Your browser does not support HTML video.
-        </video>
+    
+    </div>
+    <br>
+    <!-- About Section END -->
+
+
+
+    <!-- divider START-->
+    <div class="ez-hide-small">
+      <div class="window"></div>
+    </div>
+    <div class="ez-hide-medium">
+      <div class="window-null"></div>
+    </div>
+    <!-- divider END-->
+
+
+
+    <!-- projects START -->
+    <br>
+    <div class="w3-padding-32" id="projects">
+      <div class="w3-row">
+          <div class="w3-col w3-left w3-container" style="width: 2.5%"><p></p></div>
+          <div class="w3-col w3-right w3-container" style="width: 2.5%"><p></p></div>
+          <div class="w3-rest w3-container">
+            <div>
+              <h3 class="w3-center"><b>BROWSE SOME OF OUR WORKS</b></h3>
+              <p class="w3-center w3-medium" style="padding-bottom: 30px; padding-top: 15px;">
+                  Below are some of Ezmasterdev's completed projects. Each project serves as a testament of Ezmasterdev's skills in website development and digital craftsmanship.<br>
+                  <br><span class="w3-center w3-small w3-text-gray">(Click each project to browse their respective sites.)</span>
+              </p>
+            </div>
+            <div class="w3-row-padding w3-center" style="margin-top:px">
+              <div>
+                  <a href="https://ezmasterdev.github.io/G.A.W-home/" target="_blank" class="w3-third ez-box w3-hover-opacity" style="cursor: pointer;">
+                      <img alt="Grab A Wing" src="images/proj1.png" width="100%">
+                  </a>
+              </div>
+              <div>
+                  <a href="https://ezmasterdev.github.io/MSM/" target="_blank" class="w3-third ez-box w3-hover-opacity">
+                      <img alt="MSM Enterprise" src="images/proj2.png" width="100%">
+                  </a>
+              </div>
+              <div>
+                <a href="https://ezmasterdev.github.io/Pampiri/" target="_blank" class="w3-third ez-box w3-hover-opacity">
+                    <img alt="Pampiri Office Supplies" src="images/proj3.png" width="100%">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-row" id="about">
+          <div class="w3-col w3-left w3-container" style="width: 2.5%"><p></p></div>
+          <div class="w3-col w3-right w3-container" style="width: 2.5%"><p></p></div>
+          <div class="w3-rest w3-container">
+            <div class="w3-row-padding w3-center" style="margin-top:px">
+              <div>
+                <a href="https://mingtengs.online/index.html" target="_blank" class="w3-third ez-box w3-hover-opacity">
+                    <img alt="MingTeng's Kinalasan" src="images/proj4.png" width="100%">
+                </a>
+              </div>
+              <div>
+                <a href="https://www.4m-ezprint.shop/" target="_blank" class="w3-third ez-box w3-hover-opacity">
+                    <img alt="4M EZ Print" src="images/proj5.png" width="100%">
+                </a>
+              </div>
+              <div>
+                <a href="https://vajanelaurine.com/" target="_blank" class="w3-third ez-box w3-hover-opacity">
+                    <img alt="V.A Portfolio" src="images/proj6.png" width="100%">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <!-- projects END -->
+
+
+
+    <!-- services START -->
+    <br>
+    <div class="w3-container w3-text-white ez-hide-small" id="services1" style="padding:128px 16px; background-color: gray;">
+      <div class="w3-row-padding">
+        <div class="w3-col m6">
+          <h3>Website Development Services</h3>
+          <br>
+          <p>Ezmasterdev's Website development services encompass the expert creation and enhancement of websites to meet diverse digital needs. Ezmasterdev employs a range of programming languages, frameworks, and tools to build robust, responsive, and visually appealing websites.</p>
+          <br>
+          <p><a href="#message" class="w3-button ez-trans w3-black">Interested? <i class="fa fa-arrow-right"></i></a></p>
+          <br>
+        </div>
+        <div class="w3-col m6">
+          <video class="w3-image w3-round-large" controls>
+              <source src="images/video.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+          </video>
+        </div>
       </div>
     </div>
-  </div>
-  <br>
-  <!-- services END -->
-
-
-
-  <!-- packages START -->
-  <br>
-  <div class="w3-row-padding w3-center w3-padding-32 ez-hide-small" id="packages1">
-        <h2><b>PACKAGES</b></h2>
-        <p>Choose a plan that suits your business needs.</p><br>
-
-        <div class="w3-quarter ez-box">
-        <ul class="w3-ul w3-border w3-hover-shadow">
-            <li class="w3-theme" style="background-color: slategrey;">
-            <p class="w3-xlarge w3-text-white">Basic</p>
-            </li>
-            <li class="w3-padding-16 ">1 Page</li>
-            <li class="w3-padding-16 ">5 Sections</li>
-            <li class="w3-padding-16 ">1 Token</li>
-            <li class="w3-padding-16 ">1 Month <b>FREE</b> Hosting</li>
-            <li class="w3-padding-16 ">1 Month <b>FREE</b> S.S.L</li>
-            <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Basic S.E.O Indexing  &nbsp; <span style="color: red;"><b> X</b></span></li>
-
-            <li class="w3-padding-16">
-            <h2 class="w3-wide"><sup><s>&#8369;3,300</s></sup> &#8369;999</h2>
-            <span class="w3-opacity">Starting Price</span>
-            </li>
-            <li class="w3-theme-l5 w3-padding-24">
-            <a href="basic-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
-            </li>
-        </ul>
+    <div class="w3-container w3-text-white ez-hide-medium" id="services2" style="padding:128px 16px; background-color: gray;">
+      <div class="w3-row-padding">
+        <div>
+          <h3>Website Development Services</h3>
+          <br>
+          <p>Ezmasterdev's Website development services encompass the expert creation and enhancement of websites to meet diverse digital needs. Ezmasterdev employs a range of programming languages, frameworks, and tools to build robust, responsive, and visually appealing websites.</p>
+          <br>
+          <p><a href="#message" class="w3-button ez-trans w3-black">Interested? <i class="fa fa-arrow-right"></i></a></p>
+          <br>
         </div>
-
-        <div class="w3-quarter ez-box">
-        <ul class="w3-ul w3-border w3-hover-shadow">
-            <li class="w3-theme" style="background-color: black">
-            <p class="w3-xlarge" style="color: #CD7F32;">Bronze</p>
-            </li>
-            <li class="w3-padding-16 ">3 Pages</li>
-            <li class="w3-padding-16 ">Modified Sections</li>
-            <li class="w3-padding-16 ">3 Tokens</li>
-            <li class="w3-padding-16 ">3 Months <b>FREE</b> Hosting</li>
-            <li class="w3-padding-16 ">3 Months <b>FREE</b> S.S.L</li>
-            <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Basic S.E.O Indexing  &nbsp; <span style="color: red;"><b> X</b></span></li>
-
-            <li class="w3-padding-16">
-            <h2 class="w3-wide"><sup><s>&#8369;8,300</s></sup> &#8369;3,899</h2>
-            <span class="w3-opacity">Starting Price</span>
-            </li>
-            <li class="w3-theme-l5 w3-padding-24">
-            <a href="bronze-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
-            </li>
-        </ul>
+        <div>
+          <video class="w3-image w3-round-large" controls>
+              <source src="images/video.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+          </video>
         </div>
+      </div>
+    </div>
+    <br>
+    <!-- services END -->
 
-        <div class="w3-quarter ez-box">
-        <ul class="w3-ul w3-border w3-hover-shadow">
+
+
+    <!-- packages START -->
+    <br>
+    <div class="w3-row-padding w3-center w3-padding-32 ez-hide-small" id="packages1">
+          <h2><b>PACKAGES</b></h2>
+          <p>Choose a plan that suits your business needs.</p><br>
+
+          <div class="w3-quarter ez-box">
+          <ul class="w3-ul w3-border w3-hover-shadow">
+              <li class="w3-theme" style="background-color: slategrey;">
+              <p class="w3-xlarge w3-text-white">Basic</p>
+              </li>
+              <li class="w3-padding-16 ">1 Page Website</li>
+              <li class="w3-padding-16 ">5 Sections Max</li>
+              <li class="w3-padding-16 ">1 Revision Token</li>
+              <li class="w3-padding-16 ">1 Month <b>FREE</b> Hosting</li>
+              <li class="w3-padding-16 ">1 Month <b>FREE</b> S.S.L</li>
+              <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: red;"><b> X</b></span></li>
+              <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: red;"><b> X</b></span></li>
+              <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: red;"><b> X</b></span></li>
+              <li class="w3-padding-16 ">Basic S.E.O Indexing  &nbsp; <span style="color: red;"><b> X</b></span></li>
+
+              <li class="w3-padding-16">
+              <h2 class="w3-wide"><sup><s>&#8369;3,300</s></sup> &#8369;999</h2>
+              <span class="w3-opacity">Starting Price</span>
+              </li>
+              <li class="w3-theme-l5 w3-padding-24">
+              <a href="basic-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
+              </li>
+          </ul>
+          </div>
+
+          <div class="w3-quarter ez-box">
+          <ul class="w3-ul w3-border w3-hover-shadow">
+              <li class="w3-theme" style="background-color: black">
+              <p class="w3-xlarge" style="color: #CD7F32;">Bronze</p>
+              </li>
+              <li class="w3-padding-16 ">3 Pages Website</li>
+              <li class="w3-padding-16 ">Unlimited Sections &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 Revision Tokens &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 months <b>FREE</b> Hosting &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 Months <b>FREE</b> S.S.L &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Basic S.E.O Indexing &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+
+              <li class="w3-padding-16">
+              <h2 class="w3-wide"><sup><s>&#8369;8,300</s></sup> &#8369;3,499</h2>
+              <span class="w3-opacity">Final Price</span>
+              </li>
+              <li class="w3-theme-l5 w3-padding-24">
+              <a href="bronze-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
+              </li>
+          </ul>
+          </div>
+
+          <div class="w3-quarter ez-box">
+          <ul class="w3-ul w3-border w3-hover-shadow">
+              <li class="w3-theme" style="background-color: black;">
+              <p class="w3-xlarge" style="color: silver;">Silver</p>
+              </li>
+              <li class="w3-padding-16 ">5 Pages Website</li>
+              <li class="w3-padding-16 ">Unlimited Sections &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 Revision Tokens &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 months <b>FREE</b> Hosting &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 Months <b>FREE</b> S.S.L &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Basic S.E.O Indexing &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+
+              <li class="w3-padding-16">
+              <h2 class="w3-wide"><sup><s>&#8369;13,450</s></sup> &#8369;5,499</h2>
+              <span class="w3-opacity">Final Price</span>
+              </li>
+              <li class="w3-theme-l5 w3-padding-24">
+              <a href="silver-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
+              </li>
+          </ul>
+          </div>
+
+          <div class="w3-quarter ez-box">
+          <ul class="w3-ul w3-border w3-hover-shadow">
+              <li class="w3-theme" style="background-color: black;">
+                  <p class="w3-xlarge" style="color: gold;">Gold</p>
+              </li>
+              <li class="w3-padding-16 ">7 Pages Website</li>
+              <li class="w3-padding-16 ">Unlimited Sections &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 Revision Tokens &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 months <b>FREE</b> Hosting &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 Months <b>FREE</b> S.S.L &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Basic S.E.O Indexing &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+
+              <li class="w3-padding-16">
+              <h2 class="w3-wide"><sup><s>&#8369;18,500</s></sup> &#8369;7,499</h2>
+              <span class="w3-opacity">Final Price</span>
+              </li>
+              <li class="w3-theme-l5 w3-padding-24">
+              <a href="gold-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
+              </li>
+          </ul>
+          </div>
+    </div>
+    <div class="w3-row-padding w3-center ez-hide-medium" id="packages2">
+      <h2>PRICING</h2>
+      <p>Choose a pricing plan that fits your needs.</p><br>
+
+      <div class="w3-half ez-box w3-margin-bottom">
+          <ul class="w3-ul w3-border w3-hover-shadow">
+              <li class="w3-theme" style="background-color: slategrey;">
+              <p class="w3-xlarge w3-text-white">Basic</p>
+              </li>
+              <li class="w3-padding-16 ">1 Page Website</li>
+              <li class="w3-padding-16 ">5 Sections MAX</li>
+              <li class="w3-padding-16 ">1 Revision Token</li>
+              <li class="w3-padding-16 ">1 Month <b>FREE</b> Hosting</li>
+              <li class="w3-padding-16 ">1 Month <b>FREE</b> S.S.L</li>
+              <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: red;"><b> X</b></span></li>
+              <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: red;"><b> X</b></span></li>
+              <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: red;"><b> X</b></span></li>
+              <li class="w3-padding-16 ">Basic S.E.O Indexing  &nbsp; <span style="color: red;"><b> X</b></span></li>
+
+              <li class="w3-padding-16">
+              <h2 class="w3-wide"><sup><s>&#8369;3,300</s></sup> &#8369;999</h2>
+              <span class="w3-opacity">Starting Price</span>
+              </li>
+              <li class="w3-theme-l5 w3-padding-24">
+              <a href="basic-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
+              </li>
+          </ul>
+      </div>
+
+      <div class="w3-half ez-box w3-margin-bottom">
+          <ul class="w3-ul w3-border w3-hover-shadow">
+              <li class="w3-theme" style="background-color: black">
+              <p class="w3-xlarge" style="color: #CD7F32;">Bronze</p>
+              </li>
+              <li class="w3-padding-16 ">3 Pages Website</li>
+              <li class="w3-padding-16 ">Unlimited Sections &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 Revision Tokens &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 months <b>FREE</b> Hosting &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 Months <b>FREE</b> S.S.L &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Basic S.E.O Indexing &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16">
+              <h2 class="w3-wide"><sup><s>&#8369;8,300</s></sup> &#8369;3,499</h2>
+              <span class="w3-opacity">Final Price</span>
+              </li>
+              <li class="w3-theme-l5 w3-padding-24">
+              <a href="bronze-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
+              </li>
+          </ul>
+      </div>
+    </div>
+    <div class="w3-row-padding w3-center ez-hide-medium">
+      <div class="w3-half ez-box w3-margin-bottom">
+          <ul class="w3-ul w3-border w3-hover-shadow">
             <li class="w3-theme" style="background-color: black;">
-            <p class="w3-xlarge" style="color: silver;">Silver</p>
+              <p class="w3-xlarge" style="color: silver;">Silver</p>
             </li>
-            <li class="w3-padding-16 ">5 Pages</li>
-            <li class="w3-padding-16 ">Modified Sections</li>
-            <li class="w3-padding-16 ">4 Tokens</li>
-            <li class="w3-padding-16 ">3 Months <b>FREE</b> Hosting</li>
-            <li class="w3-padding-16 ">3 Months <b>FREE</b> S.S.L</li>
+            <li class="w3-padding-16 ">5 Pages Website</li>
+            <li class="w3-padding-16 ">Unlimited Sections &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">3 Revision Tokens &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">3 months <b>FREE</b> Hosting &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">3 Months <b>FREE</b> S.S.L &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
             <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
             <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
             <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
             <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Basic S.E.O Indexing  &nbsp; <span style="color: red;"><b> X</b></span></li>
+            <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+            <li class="w3-padding-16 ">Basic S.E.O Indexing &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
 
             <li class="w3-padding-16">
-            <h2 class="w3-wide"><sup><s>&#8369;13,450</s></sup> &#8369;5,899</h2>
-            <span class="w3-opacity">Starting Price</span>
+            <h2 class="w3-wide"><sup><s>&#8369;13,450</s></sup> &#8369;5,499</h2>
+            <span class="w3-opacity">Final Price</span>
             </li>
             <li class="w3-theme-l5 w3-padding-24">
             <a href="silver-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
             </li>
-        </ul>
-        </div>
-
-        <div class="w3-quarter ez-box">
-        <ul class="w3-ul w3-border w3-hover-shadow">
-            <li class="w3-theme" style="background-color: black;">
-                <p class="w3-xlarge" style="color: gold;">Gold</p>
-            </li>
-            <li class="w3-padding-16 ">7 Pages</li>
-            <li class="w3-padding-16 ">Modified Sections</li>
-            <li class="w3-padding-16 ">5 Tokens</li>
-            <li class="w3-padding-16 ">3 Months <b>FREE</b> Hosting</li>
-            <li class="w3-padding-16 ">3 Months <b>FREE</b> S.S.L</li>
-            <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Basic S.E.O Indexing  &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16">
-            <h2 class="w3-wide"><sup><s>&#8369;18,500</s></sup> &#8369;7,899</h2>
-            <span class="w3-opacity">Starting Price</span>
-            </li>
-            <li class="w3-theme-l5 w3-padding-24">
-            <a href="gold-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
-            </li>
-        </ul>
-        </div>
-  </div>
-  <div class="w3-row-padding w3-center ez-hide-medium" id="packages2">
-    <h2>PRICING</h2>
-    <p>Choose a pricing plan that fits your needs.</p><br>
-
-    <div class="w3-half ez-box w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-hover-shadow">
-            <li class="w3-theme" style="background-color: slategrey;">
-            <p class="w3-xlarge w3-text-white">Basic</p>
-            </li>
-            <li class="w3-padding-16 ">1 Page</li>
-            <li class="w3-padding-16 ">5 Sections</li>
-            <li class="w3-padding-16 ">1 Token</li>
-            <li class="w3-padding-16 ">1 Month <b>FREE</b> Hosting</li>
-            <li class="w3-padding-16 ">1 Month <b>FREE</b> S.S.L</li>
-            <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Basic S.E.O Indexing  &nbsp; <span style="color: red;"><b> X</b></span></li>
-
-            <li class="w3-padding-16">
-            <h2 class="w3-wide"><sup><s>&#8369;3,300</s></sup> &#8369;999</h2>
-            <span class="w3-opacity">Starting Price</span>
-            </li>
-            <li class="w3-theme-l5 w3-padding-24">
-            <a href="basic-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="w3-half ez-box w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-hover-shadow">
-            <li class="w3-theme" style="background-color: black">
-            <p class="w3-xlarge" style="color: #CD7F32;">Bronze</p>
-            </li>
-            <li class="w3-padding-16 ">3 Pages</li>
-            <li class="w3-padding-16 ">Modified Sections</li>
-            <li class="w3-padding-16 ">3 Tokens</li>
-            <li class="w3-padding-16 ">3 Months <b>FREE</b> Hosting</li>
-            <li class="w3-padding-16 ">3 Months <b>FREE</b> S.S.L</li>
-            <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Basic S.E.O Indexing  &nbsp; <span style="color: red;"><b> X</b></span></li>
-
-            <li class="w3-padding-16">
-            <h2 class="w3-wide"><sup><s>&#8369;8,300</s></sup> &#8369;3,899</h2>
-            <span class="w3-opacity">Starting Price</span>
-            </li>
-            <li class="w3-theme-l5 w3-padding-24">
-            <a href="bronze-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
-            </li>
-        </ul>
-    </div>
-  </div>
-  <div class="w3-row-padding w3-center ez-hide-medium">
-    <div class="w3-half ez-box w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-hover-shadow">
-          <li class="w3-theme" style="background-color: black;">
-            <p class="w3-xlarge" style="color: silver;">Silver</p>
-          </li>
-          <li class="w3-padding-16 ">5 Pages</li>
-          <li class="w3-padding-16 ">Modified Sections</li>
-          <li class="w3-padding-16 ">4 Tokens</li>
-          <li class="w3-padding-16 ">3 Months <b>FREE</b> Hosting</li>
-          <li class="w3-padding-16 ">3 Months <b>FREE</b> S.S.L</li>
-          <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-          <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-          <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-          <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-          <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: red;"><b> X</b></span></li>
-          <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: red;"><b> X</b></span></li>
-          <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: red;"><b> X</b></span></li>
-          <li class="w3-padding-16 ">Basic S.E.O Indexing  &nbsp; <span style="color: red;"><b> X</b></span></li>
-
-          <li class="w3-padding-16">
-          <h2 class="w3-wide"><sup><s>&#8369;13,450</s></sup> &#8369;5,899</h2>
-          <span class="w3-opacity">Starting Price</span>
-          </li>
-          <li class="w3-theme-l5 w3-padding-24">
-          <a href="silver-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
-          </li>
-        </ul>
-    </div>
-
-    <div class="w3-half ez-box w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-hover-shadow">
-            <li class="w3-theme" style="background-color: black;">
-                <p class="w3-xlarge" style="color: gold;">Gold</p>
-            </li>
-            <li class="w3-padding-16 ">7 Pages</li>
-            <li class="w3-padding-16 ">Modified Sections</li>
-            <li class="w3-padding-16 ">5 Tokens</li>
-            <li class="w3-padding-16 ">3 Months <b>FREE</b> Hosting</li>
-            <li class="w3-padding-16 ">3 Months <b>FREE</b> S.S.L</li>
-            <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
-            <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: red;"><b> X</b></span></li>
-            <li class="w3-padding-16 ">Basic S.E.O Indexing  &nbsp; <span style="color: red;"><b> X</b></span></li>
-
-            <li class="w3-padding-16">
-            <h2 class="w3-wide"><sup><s>&#8369;18,500</s></sup> &#8369;7,899</h2>
-            <span class="w3-opacity">Starting Price</span>
-            </li>
-            <li class="w3-theme-l5 w3-padding-24">
-            <a href="gold-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
-            </li>
-        </ul>
-    </div>
-  </div>
-  <br>
-  <!-- packages END -->
-
-
-
-  <!-- divder2 START-->
-  <div class="ez-hide-small">
-    <div class="window2 w3-greyscale"></div>
-  </div>
-  <div class="ez-hide-medium">
-    <div class="window2-null w3-greyscale"></div>
-  </div>
-  <!-- divder2 END-->
-
-
-
-  <!-- bottom-pic START-->
-  <img src="images/bottom-gif.gif" class="w3-image" style="width:100%; padding: 10%;">
-  <!-- bottom-pic START-->
-
-
-
-  <!-- message START -->
-  <div class="w3-container w3-padding-64 w3-theme-l5 w3-gray" id="message">
-    <div class="w3-row">
-      <div class="w3-col m5">
-      <div class="w3-padding-16"><span class="w3-xxlarge w3-border-teal w3-bottombar w3-text-white">Contact Us</span></div>
-        <a class="w3-text-white w3-hover-opacity ez-trans" href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" style="text-decoration: none;"><i class="fa fa-facebook-official w3-text-teal w3-xlarge"></i>&nbsp;&nbsp; Facebook Page</a>
-        <p class="w3-text-white"><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Sampaloc, Manila</p>
-        <p class="w3-text-white"><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+63 969 454 2048</p>
-        <p class="w3-text-white"><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;ezmasterdev28@gmail.com</p>
+          </ul>
       </div>
-      <div class="w3-col m7">
-        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="https://formsubmit.co/c190ecbe34c5ccb278e3607958e7e4b7" method="POST">
-        <h3 class="w3-center">SEND US A MESSAGE</h3>
-        <br>
-        <div class="w3-section">      
-          <label>name</label>
-          <input class="textbox" type="text" name="name" required>
-        </div>
-        <div class="w3-section">      
-          <label>phone no.</label>
-          <input class="textbox" type="number" name="phone no." required>
-        </div>  
-        <div class="w3-section">      
-          <label>e-mail</label>
-          <input class="textbox" type="email" name="e-mail" required>
-        </div>
-        <div class="w3-section">
-          <label>subject</label>
-          <select class="textbox" name="subject" required>
-            <option value="">Choose a subject</option>
-            <option value="Package inquiry">Package inquiry</option>
-            <option value="Career opportunity">Career opportunity</option>
-            <option value="Business proposal">Business proposal</option>
-            <option value="I need assistance">I need assistance</option>
-            <option value="I spotted an error">I spotted an error</option>
-            <option value="Navigation suggestion">Navigation suggestion</option>
-            <option value="Legalities">Legalities</option>
-            <option value="Other...">Other...</Other></option>
-          </select>
-        </div>
-        <div class="w3-section">      
-          <label>message</label>
-          <textarea class="textbox" rows="5" name="message" required></textarea>
+
+      <div class="w3-half ez-box w3-margin-bottom">
+          <ul class="w3-ul w3-border w3-hover-shadow">
+              <li class="w3-theme" style="background-color: black;">
+                  <p class="w3-xlarge" style="color: gold;">Gold</p>
+              </li>
+              <li class="w3-padding-16 ">7 Pages Website</li>
+              <li class="w3-padding-16 ">Unlimited Sections &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 Revision Tokens &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 months <b>FREE</b> Hosting &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">3 Months <b>FREE</b> S.S.L &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Traditional UI / UX &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Mobile Responsive &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Social Media Integration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Content Optimization &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Domain Registration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Domain Configuration &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Favicon Installation &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+              <li class="w3-padding-16 ">Basic S.E.O Indexing &nbsp; <span style="color: green;"><b> &#10003;</b></span></li>
+
+              <li class="w3-padding-16">
+              <h2 class="w3-wide"><sup><s>&#8369;18,500</s></sup> &#8369;7,499</h2>
+              <span class="w3-opacity">Final Price</span>
+              </li>
+              <li class="w3-theme-l5 w3-padding-24">
+              <a href="gold-package.html" class="w3-button w3-teal w3-padding-large ez-trans">Avail <i class="fa fa-arrow-right"></i> </a>
+              </li>
+          </ul>
       </div>
-        <br>  
-        <button type="submit" class="w3-button w3-right w3-theme w3-black ez-trans"><i class="fa fa-paper-plane-o"></i> Send</button>
-        </form>
-      </div>
-      <!-- Image of location/map -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15443.030776881806!2d120.9911014891003!3d14.61287448772447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b61d9307d247%3A0x281469aa269717a5!2sSampaloc%2C%20Manila%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1704484986529!5m2!1sen!2sph" width="100%" height="400px" style="border:0; margin-top: 48px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-  </div>
-  <!-- message END -->
+    <br>
+    <!-- packages END -->
 
 
 
-  <!-- Footer START -->
-  <footer class="w3-padding-64 w3-black w3-small w3-center ez-hide-small" id="footer" style="border-top: solid 1px white;">
-    <div class="w3-row-padding">
+    <!-- divder2 START-->
+    <div class="ez-hide-small">
+      <div class="window2 w3-greyscale"></div>
+    </div>
+    <div class="ez-hide-medium">
+      <div class="window2-null w3-greyscale"></div>
+    </div>
+    <!-- divder2 END-->
+
+
+
+    <!-- bottom-pic START-->
+    <img src="images/bottom-gif.gif" class="w3-image" style="width:100%; padding: 10%;">
+    <!-- bottom-pic START-->
+
+
+
+    <!-- message START -->
+    <div class="w3-container w3-padding-64 w3-theme-l5 w3-gray" id="message">
+      <div class="w3-row">
+        <div class="w3-col m5">
+        <div class="w3-padding-16"><span class="w3-xxlarge w3-border-teal w3-bottombar w3-text-white">Contact Us</span></div>
+          <a class="w3-text-white w3-hover-opacity ez-trans" href="https://www.facebook.com/people/Ezmasterdev/100091732606552/" style="text-decoration: none;"><i class="fa fa-facebook-official w3-text-teal w3-xlarge"></i>&nbsp;&nbsp; Facebook Page</a>
+          <p class="w3-text-white"><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Sampaloc, Manila</p>
+          <p class="w3-text-white"><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+63 969 454 2048</p>
+          <p class="w3-text-white"><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;ezmasterdev28@gmail.com</p>
+        </div>
+        <div class="w3-col m7">
+          <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="https://formsubmit.co/c190ecbe34c5ccb278e3607958e7e4b7" method="POST">
+          <h3 class="w3-center">SEND US A MESSAGE</h3>
+          <br>
+          <div class="w3-section">      
+            <label>name</label>
+            <input class="textbox" type="text" name="name" required>
+          </div>
+          <div class="w3-section">      
+            <label>phone no.</label>
+            <input class="textbox" type="number" name="phone no." required>
+          </div>  
+          <div class="w3-section">      
+            <label>e-mail</label>
+            <input class="textbox" type="email" name="e-mail" required>
+          </div>
+          <div class="w3-section">
+            <label>subject</label>
+            <select class="textbox" name="subject" required>
+              <option value="">Choose a subject</option>
+              <option value="Package inquiry">Package inquiry</option>
+              <option value="Career opportunity">Career opportunity</option>
+              <option value="Business proposal">Business proposal</option>
+              <option value="I need assistance">I need assistance</option>
+              <option value="I spotted an error">I spotted an error</option>
+              <option value="Navigation suggestion">Navigation suggestion</option>
+              <option value="Legalities">Legalities</option>
+              <option value="Other...">Other...</Other></option>
+            </select>
+          </div>
+          <div class="w3-section">      
+            <label>message</label>
+            <textarea class="textbox" rows="5" name="message" required></textarea>
+        </div>
+          <br>  
+          <button type="submit" class="w3-button w3-right w3-theme w3-black ez-trans"><i class="fa fa-paper-plane-o"></i> Send</button>
+          </form>
+        </div>
+        <!-- Image of location/map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15443.030776881806!2d120.9911014891003!3d14.61287448772447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b61d9307d247%3A0x281469aa269717a5!2sSampaloc%2C%20Manila%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1704484986529!5m2!1sen!2sph" width="100%" height="400px" style="border:0; margin-top: 48px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <!-- message END -->
+
+
+
+    <!-- Footer START -->
+    <footer class="w3-padding-64 w3-black w3-small w3-center ez-hide-small" id="footer" style="border-top: solid 1px white;">
+      <div class="w3-row-padding">
+
+        <div class="w3-quarter w3-center">
+          <img class="w3-card w3-circle" src="images/EZ-logo.png" style="height: 100px; width: 100px;">
+          <h4 style="font-size: 25px;"><b>Ezmasterdev</b></h4>
+          <br>
+          <br>
+        </div>
+
+        <div class="w3-quarter w3-center">
+          <h4><a href="#services1" class="w3-hover-text-teal" style="text-decoration: none;"><u>Services</u></a></h4>
+          <p>UI / UX Design</p>
+          <p>SEO Google Indexing</p>
+          <p>SSL Certification</p>
+          <p>Mobile Responsive</p>
+          <p>Domain Registration</p>
+          <p>Free Website Hosting</p>
+          <p>SocMed Integration</p>
+          <p>E-mail Integration</p>
+        </div>
 
       <div class="w3-quarter w3-center">
-        <img class="w3-card w3-circle" src="images/EZ-logo.png" style="height: 100px; width: 100px;">
-        <h4 style="font-size: 25px;"><b>Ezmasterdev</b></h4>
-        <br>
+        <h4><a href="#packages1" class="w3-hover-text-teal" style="text-decoration: none;"><u>Packages</u></a></h4>
+        <p>Basic package</p>
+        <p>Bronze Package</p>
+        <p>Silver Package</p>
+        <p>Gold Package</p>
         <br>
       </div>
 
       <div class="w3-quarter w3-center">
-        <h4><a href="#services1" class="w3-hover-text-teal" style="text-decoration: none;"><u>Services</u></a></h4>
-        <p>UI / UX Design</p>
-        <p>SEO Google Indexing</p>
-        <p>SSL Certification</p>
-        <p>Mobile Responsive</p>
-        <p>Domain Registration</p>
-        <p>Free Website Hosting</p>
-        <p>SocMed Integration</p>
-        <p>E-mail Integration</p>
+        <h4><a href="legal-page1.html" class="w3-hover-text-teal" style="text-decoration: none;"><u>Legal Pages</u></a></h4>
+        <p>Privacy Policy</p>
+        <p>Terms Of Use</p>
+        <p>Cookie Policy</p>
+        <p>Disclaimer</p>
+        <p>Security Policy</p>
       </div>
 
-    <div class="w3-quarter w3-center">
-      <h4><a href="#packages1" class="w3-hover-text-teal" style="text-decoration: none;"><u>Packages</u></a></h4>
-      <p>Basic package</p>
-      <p>Bronze Package</p>
-      <p>Silver Package</p>
-      <p>Gold Package</p>
-      <br>
     </div>
+    </footer>
+    <footer class="w3-padding-64 w3-black w3-small w3-center ez-hide-medium" id="footer" style="border-top: solid 1px white;">
+      <div class="w3-row-padding">
 
-    <div class="w3-quarter w3-center">
-      <h4><a href="legal-page1.html" class="w3-hover-text-teal" style="text-decoration: none;"><u>Legal Pages</u></a></h4>
-      <p>Privacy Policy</p>
-      <p>Terms Of Use</p>
-      <p>Cookie Policy</p>
-      <p>Disclaimer</p>
-      <p>Security Policy</p>
-    </div>
+        <div class="w3-third w3-center">
+          <img class="w3-card w3-circle" src="images/EZ-logo.png" style="height: 100px; width: 100px;">
+          <h4 style="font-size: 25px;"><b>Ezmasterdev</b></h4>
+          <br>
+          <br>
+        </div>
 
-  </div>
-  </footer>
-  <footer class="w3-padding-64 w3-black w3-small w3-center ez-hide-medium" id="footer" style="border-top: solid 1px white;">
-    <div class="w3-row-padding">
+        <div class="w3-third w3-center">
+          <h4><a href="#services2" class="w3-hover-text-teal" style="text-decoration: none;"><u>Services</u></a></h4>
+          <p>UI / UX Design</p>
+          <p>SEO Google Indexing</p>
+          <p>SSL Certification</p>
+          <p>Mobile Responsive</p>
+          <p>Domain Registration</p>
+          <p>Free Website Hosting</p>
+          <p>SocMed Integration</p>
+          <p>E-mail Integration</p>
+        </div>
 
       <div class="w3-third w3-center">
-        <img class="w3-card w3-circle" src="images/EZ-logo.png" style="height: 100px; width: 100px;">
-        <h4 style="font-size: 25px;"><b>Ezmasterdev</b></h4>
+        <h4><a href="#packages2" class="w3-hover-text-teal" style="text-decoration: none;"><u>Packages</u></a></h4>
+        <p>Basic package</p>
+        <p>Bronze Package</p>
+        <p>Silver Package</p>
+        <p>Gold Package</p>
         <br>
-        <br>
+
+        <h4><a href="legal-page1.html" class="w3-hover-text-teal" style="text-decoration: none;"><u>Legal Pages</u></a></h4>
+        <p>Privacy Policy</p>
+        <p>Terms Of Use</p>
+        <p>Cookie Policy</p>
+        <p>Disclaimer</p>
+        <p>Security Policy</p>
       </div>
 
-      <div class="w3-third w3-center">
-        <h4><a href="#services2" class="w3-hover-text-teal" style="text-decoration: none;"><u>Services</u></a></h4>
-        <p>UI / UX Design</p>
-        <p>SEO Google Indexing</p>
-        <p>SSL Certification</p>
-        <p>Mobile Responsive</p>
-        <p>Domain Registration</p>
-        <p>Free Website Hosting</p>
-        <p>SocMed Integration</p>
-        <p>E-mail Integration</p>
-      </div>
-
-    <div class="w3-third w3-center">
-      <h4><a href="#packages2" class="w3-hover-text-teal" style="text-decoration: none;"><u>Packages</u></a></h4>
-      <p>Basic package</p>
-      <p>Bronze Package</p>
-      <p>Silver Package</p>
-      <p>Gold Package</p>
-      <br>
-
-      <h4><a href="legal-page1.html" class="w3-hover-text-teal" style="text-decoration: none;"><u>Legal Pages</u></a></h4>
-      <p>Privacy Policy</p>
-      <p>Terms Of Use</p>
-      <p>Cookie Policy</p>
-      <p>Disclaimer</p>
-      <p>Security Policy</p>
     </div>
-
-  </div>
-  </footer>
-  <div class="w3-dark-gray w3-center w3-padding-16">
-    <p>© 2023 Ezmasterdev. All rights reserved.</p>
-  </div>
-  <!-- Footer END -->
+    </footer>
+    <div class="w3-dark-gray w3-center w3-padding-16">
+      <p>© 2023 Ezmasterdev. All rights reserved.</p>
+    </div>
+    <!-- Footer END -->
 
 
 
-<script>
-    // Slide show
-    var slideIndex2 = 1;
-    showDivs(slideIndex2);
+  <script>
+      // Slide show
+      var slideIndex2 = 1;
+      showDivs(slideIndex2);
+      
+      function plusDivs(n) {
+          showDivs(slideIndex2 += n);
+      }
+      
+      function currentDiv(n) {
+          showDivs(slideIndex2 = n);
+      }
+      
+      function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex2 = 1}    
+          if (n < 1) {slideIndex2 = x.length}
+          for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-red", "");
+          }
+          x[slideIndex2-1].style.display = "block";  
+          dots[slideIndex2-1].className += " w3-red";
+      }
+  </script>
+  <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          } else { 
+          x.className = x.className.replace(" w3-show", "");
+          }
+      }
+
+      // Modal Image Gallery
+      function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+          var captionText = document.getElementById("caption");
+          captionText.innerHTML = element.alt;
+      }
+      // Loader
+      document.addEventListener("DOMContentLoaded", function () {
+      // Hide the loading screen when the content is fully loaded
+      setTimeout(function () {
+          document.querySelector('.loading-screen').style.display = 'none';
+      }, 2000); // Adjust the time as needed
+      });
+  </script>
     
-    function plusDivs(n) {
-        showDivs(slideIndex2 += n);
-    }
-    
-    function currentDiv(n) {
-        showDivs(slideIndex2 = n);
-    }
-    
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {slideIndex2 = 1}    
-        if (n < 1) {slideIndex2 = x.length}
-        for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-red", "");
-        }
-        x[slideIndex2-1].style.display = "block";  
-        dots[slideIndex2-1].className += " w3-red";
-    }
-</script>
-<script>
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        } else { 
-        x.className = x.className.replace(" w3-show", "");
-        }
-    }
+  </body>
 
-    // Modal Image Gallery
-    function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-    }
-    // Loader
-    document.addEventListener("DOMContentLoaded", function () {
-    // Hide the loading screen when the content is fully loaded
-    setTimeout(function () {
-        document.querySelector('.loading-screen').style.display = 'none';
-    }, 2000); // Adjust the time as needed
-    });
-</script>
-  
-</body>
 </html>
