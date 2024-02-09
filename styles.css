@@ -78,7 +78,7 @@ body, html {
   padding: 16px;
 }
 .ez-glass {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
@@ -177,7 +177,7 @@ body, html {
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 128, 128, 0.5);
   }
   
   /* The dots/bullets/indicators */
@@ -193,7 +193,7 @@ body, html {
   }
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: rgba(0, 128, 128, 0.5);
   }
   
   /* Fading animation */
