@@ -17,6 +17,16 @@ cursor {
     -webkit-text-stroke: 2px #fff;
     color: transparent;
 }
+.chat-button {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 100;
+}
 
 .to-top-button {
     position: fixed;
@@ -28,7 +38,7 @@ cursor {
     text-decoration: none;
     opacity: 0.5;
     transition: all 0.4s;
-    z-index: 1;
+    z-index: 100;
 }
 .to-top-button:hover {
     opacity: 0.8;
