@@ -30,8 +30,8 @@ cursor {
 
 .to-top-button {
     position: fixed;
-    bottom: 16px;
-    right: 32px;
+    bottom: px;
+    right: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,13 +128,13 @@ body, html {
     }
  }
  
-   @media (max-width:800px) {
+  @media (max-width:800px) {
  .ez-hide-small {
      display:none!important;
  }
  }
  
- @media (max-width:2000px) and (min-width:880px) {
+ @media (max-width:2000px) and (min-width:875px) {
      .ez-hide-medium {
          display:none!important;
      }
